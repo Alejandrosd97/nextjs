@@ -1,0 +1,16 @@
+.hero{
+    background-image: url('../../public/aventura.jpg');
+    background-size:cover;
+    background-position-y: center;
+    background-position-x: left;
+    background-attachment: fixed;
+    height: 100vh;
+    position:relative;
+} 
+
+.main{
+    position: absolute;
+    top:100px;
+    left:50%;
+    transform: translateX(-50%);
+}

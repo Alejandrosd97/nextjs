@@ -1,0 +1,21 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding:0 200px;
+    align-items: center;
+    z-index:5;
+}
+
+.navbar ul{
+    display: flex;
+    padding:10px;
+    gap:10px;
+}
+
+.navbar li{
+    color:white;
+}
