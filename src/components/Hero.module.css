@@ -1,8 +1,10 @@
 .hero{
-    background-image: url('../../public/aventura.jpg');
-    background-size:cover;
-    background-position-y: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../public/winter.jpg');
+    /* background-position-y: center;
     background-position-x: left;
+    background-image: url('../../public/winter.jpg'); */
+    background-size:cover;
+    
     background-attachment: fixed;
     height: 100vh;
     position:relative;

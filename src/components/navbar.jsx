@@ -5,11 +5,11 @@ import Link from 'next/link'
 export default function Navbar() {
     const [color, setColor]= useState('white')
     const [bgColor, setBgColor]= useState('transparent')
-
+    // console.log(window.scrollY)
 
     useEffect(()=>{
         function changeColor(){
-        if (window.scrollY > 90){
+        if (window.scrollY > 600){
             setColor('black')
             setBgColor('white')
         }
@@ -25,7 +25,7 @@ export default function Navbar() {
 
   return (
     <div style={navbarColor} className={styles.navbar}>
-        <div>
+        <div className={styles.titulo}>
             TITULO
         </div>
         <ul>

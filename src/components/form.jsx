@@ -7,7 +7,7 @@ export default function Form() {
     const [focus2, setFocus2] = useState(false)
     const [focus3, setFocus3] = useState(false)
 
-  return (
+  return ( 
     <div>
         <h2 className='titulo'>CONTACT</h2>
         <form className={styles.form}>
@@ -17,7 +17,6 @@ export default function Form() {
 
             </div>
             <div className={styles.row}>
-                
                 <input type="email" required={true}/>
                 <span>Email</span>
             </div>

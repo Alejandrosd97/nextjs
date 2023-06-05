@@ -15,11 +15,14 @@
 }
 
 .row input, .row textarea{
-    border: 1px solid #eee;
+    border: 3px solid #eee;
     border-radius:5px;
-    height:40px;
-    font-size:22px;
+    height:50px;
+    font-size: 22px;
+    padding:5px 10px;
     outline:none;
+    z-index:5;
+    background-color: transparent;
 }
 
 .row span {
@@ -32,9 +35,22 @@
 }
 
 .row input:focus ~ span,
-.row textarea:focus ~ span{
-    transform:translateY(-20px) translateX(30px);
+.row textarea:focus ~ span,
+.row input:valid~span,
+.row textarea:valid~span{
+    transform:translateY(-25px) translateX(30px);
     background-color:white;
-    color:grey;
-    padding-left: 5px;
+    color:darkslategray;
+    padding: 0px 5px;
+    z-index:10;
+    border-right: 2px solid darkslategray;
+    border-left: 2px solid darkslategray;
+}
+
+
+.row input:focus,
+.row textarea:focus,
+.row input:valid,
+.row textarea:valid {
+    border: 2px solid darkslategray
 }

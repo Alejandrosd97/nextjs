@@ -16,6 +16,8 @@
     gap:10px;
 }
 
-.navbar li{
+.navbar li, .titulo{
     color:white;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
