@@ -5,7 +5,6 @@ import Link from 'next/link'
 export default function Navbar() {
     const [color, setColor]= useState('white')
     const [bgColor, setBgColor]= useState('transparent')
-    // console.log(window.scrollY)
 
     useEffect(()=>{
         function changeColor(){
@@ -32,6 +31,8 @@ export default function Navbar() {
             <Link href='/'><li style={navbarColor}> About us</li></Link>
             <Link href='/activities'><li style={navbarColor}> Activities</li></Link>
             <Link href='/contact'><li style={navbarColor}> Contact</li></Link>
+            <Link href='/programms'><li style={navbarColor}> Programms</li></Link>
+
             
         </ul>
     </div>

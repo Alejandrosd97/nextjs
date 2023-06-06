@@ -1,0 +1,16 @@
+.acordeon{
+    width: 90%;
+    max-width: 800px;
+    margin:auto;
+    margin-top: 20px;
+}
+
+.acordeonFlex{
+    display: flex;
+    gap:20px
+}
+
+.video{
+    width: 50%;
+    height: 200px;
+}
