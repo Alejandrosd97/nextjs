@@ -2,11 +2,12 @@
     width: 90%;
     max-width: 800px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 3.4em;
 }
 
 .contenedor h1{
-    margin-bottom: 50px;
+    margin-bottom: 1.6em;
+    padding-left: 0.25em;
 }
 
 .informacionPersonal{
@@ -41,3 +42,17 @@
     color: #efefef;
 }
 
+
+@media screen and (max-width:800px){
+    .informacionPersonal{
+        flex-direction:column;
+    }
+
+    .contenedor h1{
+        text-align: center;
+    }
+
+    .informacionPersonal p{
+        text-align: justify;
+    }
+}

@@ -1,11 +1,23 @@
-import React from 'react'
-import styles from './SobreMi.module.css'       
+import {React, useEffect} from 'react'
+import styles from './SobreMi.module.css'  
+import Aos from 'aos'
+import 'aos/dist/aos.css'     
 
 
 
 export default function SobreMi() {
+
+   useEffect(()=>{
+        const animation = ()=>{
+            Aos.init({duration:2000})
+        }
+        animation()}
+        , []
+        )
+
+
   return (
-    <div id='sobremi' className={styles.contenedor}>
+    <div data-aos='fade-right' id='sobremi' className={styles.contenedor}>
         <h1 >Sobre mi</h1>
         <div className={styles.informacionPersonal}>
             <img src="https://picsum.photos/200" alt="" />

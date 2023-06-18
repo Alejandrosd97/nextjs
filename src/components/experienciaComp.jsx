@@ -1,5 +1,7 @@
-import {React, useState} from 'react'
+import {React, useState, useEffect} from 'react'
 import styles from './ExperienciaComp.module.css'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 
 export default function ExperienciaComp() {
@@ -10,8 +12,16 @@ export default function ExperienciaComp() {
       setActive(name)
   }
 
+  useEffect(()=>{
+        const animation = ()=>{
+            Aos.init({duration:2000})
+        }
+        animation()}
+        , []
+        )
+
   return (
-    <div className={styles.contenedor}>
+    <div data-aos='fade-right' className={styles.contenedor}>
         <h1 id='experiencia'>Experiencia</h1>
         <div className={styles.experiencia}>
            <ul className={styles.titulos}>

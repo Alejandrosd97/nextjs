@@ -24,7 +24,7 @@ export default function Navbar() {
             setBgColor('white')
             setShadow('0 10px 150px rgba(0, 0, 0, 0.1)')
         }
-        else{
+        else{ 
             setColor('whitesmoke')
             setBgColor('transparent')
             setShadow('none')
@@ -42,7 +42,7 @@ export default function Navbar() {
             ALEJANDRO SANTAMARIA
         </div>
         <ul className={menu ? styles.active : styles.hidden}>
-            <Link href='/' ><li style={textColor}> Sobre mi</li></Link>
+            <Link href='/' onClick={toggleMenu}><li style={textColor}> Sobre mi</li></Link>
             <Link href='/experiencia' onClick={toggleMenu}><li style={textColor} >Experiencia</li></Link>
             <Link href='/contact' onClick={toggleMenu}><li style={textColor}> Contacto</li></Link>
             <Link href='/listaProgramas' onClick={toggleMenu}><li style={textColor}> Programas</li></Link>

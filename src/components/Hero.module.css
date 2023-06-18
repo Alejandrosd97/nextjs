@@ -1,8 +1,5 @@
 .hero{
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../public/winter.jpg');
-    /* background-position-y: center;
-    background-position-x: left;
-    background-image: url('../../public/winter.jpg'); */
     background-size:cover;
     
     background-attachment: fixed;
@@ -37,5 +34,21 @@
 @media screen and (max-width:600px){
     .main{
         text-align: center;
+    }
+}
+
+@media (orientation: portrait) {
+    .hero {
+        max-height: 700px;
+    }
+}
+
+@media screen and (min-width:1230px){
+    .main{
+        color:#efefef !important;
+    }
+
+    .mainButton {
+        display: inline !important;
     }
 }
