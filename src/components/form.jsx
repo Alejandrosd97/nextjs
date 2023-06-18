@@ -23,7 +23,7 @@ export default function Form() {
 
   return ( 
     <div data-aos='fade-right' className={styles.contenedorForm}>
-        <h2 className='titulo'>CONTACTO</h2>
+        <h2 id='contacto' className='titulo'>CONTACTO</h2>
         <p>Escríbeme un mensaje y me pondré en contacto contigo lo antes posible</p>
         <form className={styles.form}>
             <div className={styles.row}>

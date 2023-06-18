@@ -11,6 +11,33 @@
 
 .informacionPersonal{
     display:flex;
-    align-items: space-between;
+    justify-content: space-between;
+    align-items: center;
     gap: 30px;
 }
+
+
+.informacionPersonal img{
+    border-radius:50%;
+}
+
+.curriculum{
+    margin-top:40px;
+    font-weight: bold;
+}
+
+.curriculumButton{
+    background-color: transparent;
+    color: #011627;
+    padding: 8px 20px;
+    border: 2px solid #011627;
+    border-radius: 2px;
+    display: block;
+    margin-top:20px;
+}
+    
+.curriculumButton:hover {
+    background-color: #011627;
+    color: #efefef;
+}
+

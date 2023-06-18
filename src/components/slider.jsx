@@ -34,7 +34,6 @@ export default function slider({fotos}) {
     <div className='carrusel'>
         <h2 className={styles.titulo}>Gallery</h2>
         {sliderFotos}
-        <h1>hola</h1>
     </div>
     
   )

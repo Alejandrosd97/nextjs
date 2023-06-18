@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <>
-    <Hero/>
+    <Hero titulo='Soy Alejandro' boton='Ver mas' enlace='#sobremi' subtitulo='Fisioterapeuta autónmo'/>
     <SobreMi/>
     <Slider fotos={fotos}/> 
     </>

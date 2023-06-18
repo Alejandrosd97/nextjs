@@ -26,6 +26,12 @@
     background:transparent;
     border-radius:2px;
     color:#efefef;
+    transition: 0.3s;
+}
+
+.mainButton:hover{
+    transform: translateY(-3px);
+    transition:0.3s;
 }
 
 @media screen and (max-width:600px){

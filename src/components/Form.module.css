@@ -102,7 +102,7 @@
 
 .enviar{
     background-color:transparent;
-    color:#070D0D;
+    color:#011627;
     padding:8px 20px;
     border: 2px solid #011627;
     border-radius: 2px
@@ -111,7 +111,6 @@
 .enviar:hover{
     background-color: #011627;
     color: #efefef;
-    
 }
 
 .contenedorForm .row .inputBox textarea:focus~.line,

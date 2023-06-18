@@ -12,7 +12,7 @@ export default function ExperienciaComp() {
 
   return (
     <div className={styles.contenedor}>
-        <h1>Experiencia</h1>
+        <h1 id='experiencia'>Experiencia</h1>
         <div className={styles.experiencia}>
            <ul className={styles.titulos}>
             <li className={active=='trabajos'? styles.bold: styles.normal} onClick={()=>change('trabajos')}>Experiencia laboral</li>
@@ -21,16 +21,17 @@ export default function ExperienciaComp() {
            </ul>
 
            { active=='trabajos' && <ul className={styles.trabajos}>
-            <li>Fsioterapeuta autónomo</li>
-            <li>Clínica Raulfisio Gandia</li>
-            <li>Clínica Raulfisio Denia</li>
-            <li>Torneo ITF Orysol Gandía 2021</li>
-            <li>Torneo ITF Seniors Carmen Perea 2021</li>
-            <li>Torneo ITF Orysol Gandía 2022</li>
+            <li> <span>Fsioterapeuta autónomo</span> </li>
+            <li><span>Clínica Raulfisio Gandia</span> </li>
+            <li><span>Clínica Raulfisio Denia</span> </li>
+            <li> <span>Torneo ITF Orysol Gandía 2021</span> </li>
+            <li><span>Torneo ITF Seniors Carmen Perea 2021</span></li>
+            <li><span>Torneo ITF Orysol Gandía 2022</span></li>
            </ul>}
 
            {active=='formaciones' && 
            <>
+           <h5>Estudios</h5>
            <ul className={styles.formaciones}>
             <li>Grado en Fisioterapia - Universitat de Lleida 2017-2021</li>
             <li>Grado en Enfermería (hasta tercer curso) - Universitat de LLeida 2017-2020 </li>
@@ -38,6 +39,7 @@ export default function ExperienciaComp() {
             <li>Bachillerato científico - IES Tirant Lo Blanc 2013-2015</li>
            </ul>
 
+          <h5>Formaciones</h5>
           <ul className={styles.formaciones}>
             <li>Fisioterapia en las cervicalgias, radiculopatías y hernias discales - 20h</li>
             <li>Manipulaciones vertebrales - 25h</li>
