@@ -4,9 +4,11 @@ import styles from './Hero.module.css'
 export default function Hero() {
   return (
     <div className={styles.hero}>
-        <div>
-            <h1 className={styles.main}>ADVENTURE</h1>
-        </div>
+       <div className={styles.main}>
+            <h1 >Soy Alejandro</h1>
+            <p>Fisioterapeuta autónomo</p>
+            <button className={styles.mainButton}>Ver mas</button>
+        </div >
     </div>
-  )
+  ) 
 }

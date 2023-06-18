@@ -3,7 +3,7 @@ import Programa from '@/components/programa'
 
 import React from 'react'
 
-export default function contact() {
+export default function programa() {
   return (
     <>
     <Navbar/>

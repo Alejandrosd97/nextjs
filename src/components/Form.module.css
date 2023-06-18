@@ -1,56 +1,134 @@
-.form{
-    width:90%;
-    max-width: 500px;
+.contenedorForm{
+    width: 90%;
+    max-width: 500px;   
     padding:10px;
-    margin:auto;
-    margin-bottom: 100px;
-    position:relative;
+    margin: auto;
+    margin-top: 50px;
+
 }
 
-.row{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    margin-bottom:30px;
+.contenedorForm .row{
+    position: relative;
+    width:100%;
+    height:40px;
+    margin:40px 0px;
 }
 
-.row input, .row textarea{
-    border: 3px solid #eee;
-    border-radius:5px;
-    height:50px;
-    font-size: 22px;
-    padding:5px 10px;
-    outline:none;
-    z-index:5;
-    background-color: transparent;
+.contenedorForm .row .inputBox{
+    position: relative;
+    width: 100%;
+    height:100%;
 }
 
-.row span {
+.contenedorForm .row .inputBox input,
+.contenedorForm .row .inputBox textarea{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background: transparent;
+    outline: none;
+    border:none;
+    z-index:1;
+    font-size:18px;
+    color:transparent;
+    padding-left:10px;
+}
+
+.contenedorForm .row .inputBox .text
+{
     position:absolute;
+    top:50%;
+    transform:translateY(-50%);
     left:0;
-    padding-left: 20px;
-    color:#eee;
-    transition:ease 0.5s;
-    font-size:20px;
+    transition:0.5s;
+    display:block;
+    pointer-events:none;
 }
 
-.row input:focus ~ span,
-.row textarea:focus ~ span,
-.row input:valid~span,
-.row textarea:valid~span{
-    transform:translateY(-25px) translateX(30px);
-    background-color:white;
-    color:darkslategray;
-    padding: 0px 5px;
-    z-index:10;
-    border-right: 2px solid darkslategray;
-    border-left: 2px solid darkslategray;
+.contenedorForm .row .textArea .text {
+    top: 10px;
 }
 
+.contenedorForm .row .inputBox input:focus + .text,
+.contenedorForm .row .inputBox input:valid + .text{
+    top:-10px;
+    font-size:14px;
+    
+}
 
-.row input:focus,
-.row textarea:focus,
-.row input:valid,
-.row textarea:valid {
-    border: 2px solid darkslategray
+.contenedorForm .row .inputBox input:focus,
+.contenedorForm .row .inputBox input:valid,
+.contenedorForm .row .inputBox textarea:focus,
+.contenedorForm .row .inputBox textarea:valid{
+    color:#efefef;
+}
+
+.contenedorForm .row .inputBox textarea:focus + .text,
+.contenedorForm .row .inputBox textarea:valid + .text{
+    top: -5px;
+    font-size: 14px;
+    color:#efefef;
+}
+
+.contenedorForm .row .inputBox .line{
+    position:absolute;
+    bottom:0px;
+    display:block;
+    width:100%;
+    height:2px;
+    background:#011627;
+    transition:0.5s;
+    pointer-events:none;
+}
+
+.contenedorForm .row .inputBox input:focus ~ .line,
+.contenedorForm .row .inputBox input:valid ~ .line{
+    height:90%;
+    border-radius:2px
+}
+
+.contenedorForm .row .inputBox.textArea{
+    position:relative;
+    width:100%;
+    height:120px;
+    
+}
+
+.contenedorForm .row .inputBox textarea{
+    height:100%;
+    resize:none;
+    padding:15px 10px;
+}
+
+.enviar{
+    background-color:transparent;
+    color:#070D0D;
+    padding:8px 20px;
+    border: 2px solid #011627;
+    border-radius: 2px
+}
+
+.enviar:hover{
+    background-color: #011627;
+    color: #efefef;
+    
+}
+
+.contenedorForm .row .inputBox textarea:focus~.line,
+.contenedorForm .row .inputBox textarea:valid~.line{
+    height:90%;
+    border-radius: 2px
+}
+
+.privacidad{
+    display:flex;
+    margin-top:100px !important;
+    margin-bottom:20px !important;
+    gap:20px;
+    align-items:center;
+
+}
+
+.privacidad p{
+    margin:0
 }

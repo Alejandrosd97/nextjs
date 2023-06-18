@@ -12,7 +12,24 @@
 
 .main{
     position: absolute;
-    top:100px;
+    top:50%;
+    width: 90%;
+    max-width: 500px;
     left:50%;
-    transform: translateX(-50%);
+    transform:translate(-50%, -50%);
+    color: #efefef;
+}
+
+.mainButton{
+    padding:10px 20px;
+    border: 2px solid #efefef;
+    background:transparent;
+    border-radius:2px;
+    color:#efefef;
+}
+
+@media screen and (max-width:600px){
+    .main{
+        text-align: center;
+    }
 }
