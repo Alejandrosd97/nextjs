@@ -1,0 +1,25 @@
+.programasContainer{
+    width: 90%;
+    max-width: 800px;
+    margin:auto;
+    margin-top: 150px;
+}
+
+.programasContainer h1{
+    margin-bottom: 40px;
+}
+
+.filtro{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    gap:20px
+}
+
+.filtro li{
+    cursor: pointer;
+}
+
+.filtro li:hover{
+    font-weight: bold;
+}

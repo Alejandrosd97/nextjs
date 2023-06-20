@@ -10,8 +10,8 @@ export default function programacaja() {
             <div className={styles.texto}>
             <h3>Rehabilitación</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore saepe mollitia quis magnam inventore? Dolor natus consectetur nihil. Modi reiciendis deserunt commodi non facilis nesciunt laudantium sint velit tempore maxime.</p>
+        <br />
         </div>
-        
     </div>
   )
 }
