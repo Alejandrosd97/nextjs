@@ -2,6 +2,8 @@ import {React, useState, useEffect} from 'react'
 import styles from './ExperienciaComp.module.css'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import Trabajos from '@/components/trabajos'
+ 
 
 
 export default function ExperienciaComp() {
@@ -30,24 +32,10 @@ export default function ExperienciaComp() {
             <li className={active=='otras'? styles.bold: styles.normal} onClick={()=>change('otras')}>Otras habilidades</li>
            </ul>
 
-           { active=='trabajos' && <ul className={styles.trabajos}>
-            <li> <span>Fsioterapeuta autónomo</span> </li>
-            <li><span>Clínica Raulfisio Gandia</span> </li>
-            <li><span>Clínica Raulfisio Denia</span> </li>
-            <li> <span>Torneo ITF Orysol Gandía 2021</span> </li>
-            <li><span>Torneo ITF Seniors Carmen Perea 2021</span></li>
-            <li><span>Torneo ITF Orysol Gandía 2022</span></li>
-           </ul>}
+           { active=='trabajos' && <Trabajos/>}
 
            {active=='formaciones' && 
            <>
-           <h5>Estudios</h5>
-           <ul className={styles.formaciones}>
-            <li>Grado en Fisioterapia - Universitat de Lleida 2017-2021</li>
-            <li>Grado en Enfermería (hasta tercer curso) - Universitat de LLeida 2017-2020 </li>
-            <li>Grado superior en Laboratorio de Diagnóstico Clínico - IES Tirant Lo Blanc 2015-2017</li>
-            <li>Bachillerato científico - IES Tirant Lo Blanc 2013-2015</li>
-           </ul>
 
           <h5>Formaciones</h5>
           <ul className={styles.formaciones}>
@@ -57,6 +45,16 @@ export default function ExperienciaComp() {
             <li>Tratamiento fisioterápico de las disfunciones de la articulacion temporomandibular (ATM) - 15h</li>
             <li>Terapia manual en las lumbágias y ciáticas - 15h</li>
           </ul>
+
+           <h5>Estudios</h5>
+           <ul className={styles.formaciones}>
+            <li>Grado en Fisioterapia - Universitat de Lleida 2017-2021</li>
+            <li>Grado en Enfermería (hasta tercer curso) - Universitat de LLeida 2017-2020 </li>
+            <li>Grado superior en Laboratorio de Diagnóstico Clínico - IES Tirant Lo Blanc 2015-2017</li>
+            <li>Bachillerato científico - IES Tirant Lo Blanc 2013-2015</li>
+           </ul>
+
+          
           </>}
 
           { active == 'otras' && <ul className={styles.otras}>

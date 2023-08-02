@@ -1,0 +1,34 @@
+.contenedor ul{
+    padding:0;
+}
+
+.contenedor li {
+    padding: 0;
+    position:relative;
+    padding-left:15px;
+    margin-bottom:30px;
+}
+
+.lineaSuperior{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:15px;
+}
+
+.fecha{
+    background-color: #ffd60a;
+    border-radius:5px;
+    color:white;
+    padding:4px 8px;
+}
+
+.punto{
+    width:10px;
+    height:10px;
+    background-color:black;
+    border-radius:50%;
+    position:absolute;
+    left:-5px;
+    top:10px;
+}

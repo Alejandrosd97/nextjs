@@ -1,6 +1,7 @@
 .hero{
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../public/winter.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../public/masaje2.jpg');
     background-size:cover;
+    background-position: 20%;
     
     background-attachment: fixed;
     height: 100vh;

@@ -22,7 +22,7 @@ export default function Form() {
     
 
   return ( 
-    <div data-aos='fade-up' className={styles.contenedorForm}>
+    <div data-aos='fade-right' className={styles.contenedorForm}>
         <h2 id='contacto' className='titulo'>CONTACTO</h2>
         <p>Escríbeme un mensaje y me pondré en contacto contigo lo antes posible</p>
         <form className={styles.form}>
@@ -57,6 +57,8 @@ export default function Form() {
 
             <button id='boton' className={styles.enviar} type='submit'>Enviar</button>
         </form>
+
+        <a href='https://wa.me/34675644493' target='_blank'>whatsapp</a>
     </div>
   )
 }
