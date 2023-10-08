@@ -1,21 +1,21 @@
-.parrafo{
-    color:blue
+.parrafo {
+    color: blue
 }
 
-.tenis{
-    display:flex;
+.tenis {
+    display: flex;
     flex-direction: column;
-    gap:20px;
-    align-items:center
+    gap: 20px;
+    align-items: center
 }
 
-.fotoTenis{
-    width:100%;
-    height:100%
+.fotoTenis {
+    width: 100%;
+    height: 100%
 }
 
-@media screen and (min-width:800px){
-    .tenis{
+@media screen and (min-width:800px) {
+    .tenis {
         flex-direction: row;
         height: 350px;
     }
