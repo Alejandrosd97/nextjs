@@ -3,7 +3,7 @@ import styles from './Torneos.module.css'
 import Aos from 'aos'
 import 'aos/dist/aos.css'  
 import Image from 'next/image'
-
+ 
 
 
 
