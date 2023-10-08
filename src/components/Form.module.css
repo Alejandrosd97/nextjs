@@ -30,7 +30,7 @@
     border:none;
     z-index:1;
     font-size:18px;
-    color:transparent;
+    color:#e8c061;
     padding-left:10px;
 }
 
@@ -60,7 +60,7 @@
 .contenedorForm .row .inputBox input:valid,
 .contenedorForm .row .inputBox textarea:focus,
 .contenedorForm .row .inputBox textarea:valid{
-    color:#efefef;
+    color:#e8c061;
 }
 
 .contenedorForm .row .inputBox textarea:focus + .text,
@@ -76,7 +76,7 @@
     display:block;
     width:100%;
     height:2px;
-    background:#003566;
+    background:rgba(0, 0, 0, 0.8);
     transition:0.5s;
     pointer-events:none;
 }

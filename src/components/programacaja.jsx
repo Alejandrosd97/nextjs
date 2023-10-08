@@ -1,10 +1,12 @@
 import React from 'react'
 import styles from './Programacaja.module.css'
+import Link from 'next/link'
+
 
 
 export default function programacaja() {
   return (
-
+      <Link href='programm'>
         <div className={styles.caja}>
             <img src="https://picsum.photos/300/200" alt="" />
             <div className={styles.texto}>
@@ -13,5 +15,6 @@ export default function programacaja() {
         <br />
         </div>
     </div>
+    </Link>
   )
 }

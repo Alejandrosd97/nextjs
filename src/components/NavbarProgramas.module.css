@@ -24,7 +24,11 @@
 .titulo {
     font-weight: bold;
     letter-spacing: 2px;
-    color:#011627
+    color:#011627;
+}
+
+.titulo{
+    color: #e8c061;
 }
 
 .navbar a {
@@ -94,6 +98,11 @@
         width: auto;
         left: auto !important;
         transition: none;
+    }
+
+    .navbar li:hover{
+        color: #e8c061;
+        transition:0.2s
     }
 
 }

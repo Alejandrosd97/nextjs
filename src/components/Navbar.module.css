@@ -20,14 +20,19 @@
 
 
 .navbar li, .titulo{
-    color:white;
     font-weight: bold;
     letter-spacing: 2px;
+    color: #e8c061;
 }
 
 .navbar a{ 
     padding:0px 5px;
     position:relative;
+}
+
+.navbar a li:hover{
+    color: #e8c061 !important;
+    transition:0.5s;
 }
 
 /* .navbar a:after{

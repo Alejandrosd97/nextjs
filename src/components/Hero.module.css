@@ -4,7 +4,7 @@
     background-position: 20%;
     
     background-attachment: fixed;
-    height: 100vh;
+    height: 120vh;
     position:relative;
 } 
 
@@ -18,18 +18,26 @@
     color: #efefef;
 }
 
+.main h1{
+    text-transform:uppercase;
+}
+
 .mainButton{
     padding:10px 20px;
-    border: 2px solid #efefef;
+    border: 3px solid #e8c061;
     background:transparent;
     border-radius:2px;
-    color:#efefef;
+    color:#e8c061;
     transition: 0.3s;
+    
 }
 
 .mainButton:hover{
     transform: translateY(-3px);
+    background-color: #e8c061;
     transition:0.3s;
+    border: 3px solid #e8c061;
+    color:white;
 }
 
 @media screen and (max-width:600px){
@@ -47,6 +55,11 @@
 @media screen and (min-width:1230px){
     .main{
         color:#efefef !important;
+        left:20%
+    }
+
+    .main h1 {
+        font-size:60px;
     }
 
     .mainButton {

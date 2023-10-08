@@ -1,0 +1,15 @@
+.parrafo{
+
+}
+
+.tenis{
+    display:flex;
+    height:350px;
+    gap:20px;
+    align-items:center
+}
+
+.fotoTenis{
+    width:50%;
+    height:100%
+}

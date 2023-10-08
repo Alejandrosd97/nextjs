@@ -29,17 +29,19 @@
 
 .curriculumButton{
     background-color: transparent;
-    color: #011627;
+    color: #e8c061;
     padding: 8px 20px;
-    border: 2px solid #011627;
+    border: 3px solid #e8c061;
     border-radius: 2px;
     display: block;
     margin-top:20px;
 }
     
 .curriculumButton:hover {
-    background-color: #011627;
+    background-color: #e8c061;
     color: #efefef;
+    border: 3px solid #e8c061;
+
 }
 
 
@@ -55,4 +57,5 @@
     .informacionPersonal p{
         text-align: justify;
     }
+
 }

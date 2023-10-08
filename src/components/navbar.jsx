@@ -38,13 +38,14 @@ export default function Navbar() {
 
   return (
     <div style={navbarColor} className={styles.navbar}>
-        <div style={textColor} className={styles.titulo}>
+        <div className={styles.titulo}>
             ALEJANDRO SANTAMARIA
         </div>
         <ul className={menu ? styles.active : styles.hidden}>
             <Link href='/' onClick={toggleMenu}><li style={textColor}> Sobre mi</li></Link>
             <Link href='/experiencia' onClick={toggleMenu}><li style={textColor} >Experiencia</li></Link>
             <Link href='/contact' onClick={toggleMenu}><li style={textColor}> Contacto</li></Link>
+            <Link href='/servicios' onClick={toggleMenu}><li style={textColor}> Servicios</li></Link>
             <Link href='/listaProgramas' onClick={toggleMenu}><li style={textColor}> Programas</li></Link>
         </ul>
             {

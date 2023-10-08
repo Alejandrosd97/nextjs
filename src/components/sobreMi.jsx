@@ -1,7 +1,11 @@
 import {React, useEffect} from 'react'
 import styles from './SobreMi.module.css'  
 import Aos from 'aos'
-import 'aos/dist/aos.css'     
+import 'aos/dist/aos.css'  
+import Image from 'next/image'
+import Torneos from '@/components/Torneos'
+
+
 
 
 
@@ -30,6 +34,7 @@ export default function SobreMi() {
             <button className={styles.curriculumButton}>DESCARGAR</button>
           </a>
         </div>
+        <Torneos/>
     </div>
   )
 }

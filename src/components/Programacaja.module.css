@@ -1,6 +1,7 @@
 .caja{
     display:flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     max-width: 800px;
     margin: auto;
@@ -8,6 +9,11 @@
     gap:20px
 }
 
+.caja p, .texto{
+    margin: 0;
+}
+
 .caja img{
     width: 40%;
+    border-radius:3px
 }
