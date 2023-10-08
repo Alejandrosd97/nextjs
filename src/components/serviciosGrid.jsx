@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './ServiciosGrid.module.css'
+import styles from './ServGrid.module.css'
 
 
 export default function ServiciosGrid() {
