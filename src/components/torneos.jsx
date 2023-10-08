@@ -9,17 +9,8 @@ import Image from 'next/image'
 
 export default function Torneos() {
 
-   useEffect(()=>{
-        const animation = ()=>{
-            Aos.init({duration:2000})
-        }
-        animation()}
-        , []
-        )
-
-
   return (
-    <div data-aos='fade-right' id='sobremi' className={styles.contenedor}>
+    <div className={styles.contenedor}>
         
         <div className={styles.tenis}>
           <img className={styles.fotoTenis}

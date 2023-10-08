@@ -9,7 +9,7 @@ export default function servicios() {
     <div>
       <Navbar/>
         <Hero titulo='Servicios' boton='Ver' enlace='#servicios' subtitulo='Descubre lo que soy puedo hacer por ti'/>
-        <h2 style={{marginRight : 'auto' , marginLeft : 'auto', marginTop : '50px', marginBottom : '40px'}}>Servicios</h2>
+        <h2>Servicios</h2>
         <ServiciosGrid/>
     </div>
   )

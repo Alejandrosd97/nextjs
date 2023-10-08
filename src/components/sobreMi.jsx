@@ -3,7 +3,7 @@ import styles from './SobreMi.module.css'
 import Aos from 'aos'
 import 'aos/dist/aos.css'  
 import Image from 'next/image'
-import Torneos from '@/components/Torneos'
+import Torneos from './torneos'
 
 
 
