@@ -55,7 +55,7 @@
 @media screen and (min-width:1230px){
     .main{
         color:#efefef !important;
-        left:20%
+        left:40%
     }
 
     .main h1 {
@@ -65,4 +65,6 @@
     .mainButton {
         display: inline !important;
     }
+
+    
 }

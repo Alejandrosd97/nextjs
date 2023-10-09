@@ -1,5 +1,5 @@
-.parrafo {
-    color: blue
+.contenedor{
+    margin-top:50px
 }
 
 .tenis {
@@ -14,7 +14,11 @@
     height: 100%
 }
 
-@media screen and (min-width:800px) {
+.segundaFila{
+    flex-direction: column-reverse;
+}
+
+@media screen and (min-width:900px) {
     .tenis {
         flex-direction: row;
         height: 350px;
@@ -22,5 +26,9 @@
 
     .fotoTenis {
         width: 50%;
+    }
+
+    .segundaFila{
+        flex-direction: row;
     }
 }

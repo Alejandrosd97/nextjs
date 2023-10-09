@@ -19,7 +19,7 @@ export default function Torneos() {
               />
           <p className={styles.parrafo}> Ademas de mi trabajo como fisioterapeuta, una de mis grandes pasiones es el tenis. A lo largo de los años, he tenido la oportunidad de estar involucrado en varios torneos de tenis de renombre, tanto a nivel local como internacional. Esta experiencia ha enriquecido mi comprensión de los desafíos físicos que enfrentan los atletas en el mundo del tenis. Mi objetivo es ayudar a los jugadores a superar lesiones, prevenir nuevas y maximizar su rendimiento en la cancha. Creo que la fisioterapia desempeña un papel crucial en el éxito de los atletas, ya que puede contribuir a su recuperación y mantenerlos en su mejor forma física.</p>
         </div>
-        <div className={styles.tenis}>
+        <div className={`${styles.tenis} ${styles.segundaFila}`}>
           <p className={styles.parrafo}> Ademas de mi trabajo como fisioterapeuta, una de mis grandes pasiones es el tenis. A lo largo de los años, he tenido la oportunidad de estar involucrado en varios torneos de tenis de renombre, tanto a nivel local como internacional. Esta experiencia ha enriquecido mi comprensión de los desafíos físicos que enfrentan los atletas en el mundo del tenis. Mi objetivo es ayudar a los jugadores a superar lesiones, prevenir nuevas y maximizar su rendimiento en la cancha. Creo que la fisioterapia desempeña un papel crucial en el éxito de los atletas, ya que puede contribuir a su recuperación y mantenerlos en su mejor forma física.</p>
 
           <img className={styles.fotoTenis}

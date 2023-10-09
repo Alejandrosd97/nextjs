@@ -19,6 +19,8 @@ export default function NavbarProgramas() {
         <ul className={menu ? styles.active : styles.hidden}>
             <Link href='/' onClick={toggleMenu}><li > Sobre mi</li></Link>
             <Link href='/experiencia' onClick={toggleMenu}><li >Experiencia</li></Link>
+            <Link href='/servicios' onClick={toggleMenu}><li > Servicios</li></Link>
+
             <Link href='/contact' onClick={toggleMenu}><li> Contacto</li></Link>
             <Link href='/listaProgramas' onClick={toggleMenu}><li> Programas</li></Link>
         </ul>
