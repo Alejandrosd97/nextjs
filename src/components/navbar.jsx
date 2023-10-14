@@ -43,14 +43,13 @@ export default function Navbar() {
         </div>
         <ul className={menu ? styles.active : styles.hidden}>
             <Link href='/' onClick={toggleMenu}><li style={textColor}> Sobre mi</li></Link>
-            <Link href='/experiencia' onClick={toggleMenu}><li style={textColor} >Experiencia</li></Link>
-            <Link href='/contact' onClick={toggleMenu}><li style={textColor}> Contacto</li></Link>
             <Link href='/servicios' onClick={toggleMenu}><li style={textColor}> Servicios</li></Link>
+            <Link href='/contact' onClick={toggleMenu}><li style={textColor}> Contacto</li></Link>
             <Link href='/listaProgramas' onClick={toggleMenu}><li style={textColor}> Programas</li></Link>
         </ul>
             {
-                menu ? <AiOutlineClose className={styles.icon} size={20} onClick={toggleMenu}/> 
-                : <AiOutlineMenu className={styles.icon} size={20} onClick={toggleMenu}/>
+                menu ? <AiOutlineClose className={styles.icon} style={textColor} size={20} onClick={toggleMenu}/> 
+                : <AiOutlineMenu className={styles.icon} style={textColor} size={20} onClick={toggleMenu}/>
             }
            
        

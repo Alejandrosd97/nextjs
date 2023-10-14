@@ -30,7 +30,7 @@
     border:none;
     z-index:1;
     font-size:18px;
-    color:#e8c061;
+    color:#fff;
     padding-left:10px;
 }
 
@@ -60,7 +60,7 @@
 .contenedorForm .row .inputBox input:valid,
 .contenedorForm .row .inputBox textarea:focus,
 .contenedorForm .row .inputBox textarea:valid{
-    color:#e8c061;
+    color:#fff;
 }
 
 .contenedorForm .row .inputBox textarea:focus + .text,
@@ -76,7 +76,7 @@
     display:block;
     width:100%;
     height:2px;
-    background:rgba(0, 0, 0, 0.8);
+    background:#6189e8;
     transition:0.5s;
     pointer-events:none;
 }
@@ -102,15 +102,17 @@
 
 .enviar{
     background-color:transparent;
-    color:#011627;
+    color:#e8c061;
     padding:8px 20px;
-    border: 2px solid #011627;
-    border-radius: 2px
+    border: 2px solid #e8c061;
+    border-radius: 2px;
+    transition:0.2s
 }
 
 .enviar:hover{
-    background-color: #011627;
+    background-color: #e8c061;
     color: #efefef;
+    transition:0.2s;
 }
 
 .contenedorForm .row .inputBox textarea:focus~.line,
@@ -130,4 +132,26 @@
 
 .privacidad p{
     margin:0
+}
+
+.curriculum {
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.curriculumButton {
+    background-color: transparent;
+    color: #e8c061;
+    padding: 8px 20px;
+    border: 3px solid #e8c061;
+    border-radius: 2px;
+    display: block;
+    margin-top: 20px;
+}
+
+.curriculumButton:hover {
+    background-color: #e8c061;
+    color: #efefef;
+    border: 3px solid #e8c061;
+
 }

@@ -43,12 +43,14 @@
 
 .icon {
     display: none;
+    color: black;
 }
 
 .active {
     width: 100%;
     left: 0px !important;
     transition: ease 1s !important;
+    
 }
 
 .hidden {

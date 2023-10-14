@@ -10,8 +10,8 @@ export default function contact() {
     <div>
         <Navbar/>
         <Hero titulo='Contacto' boton='¡Hablemos!' enlace='#contacto' subtitulo='Escríbeme un mensaje a través del siguiente formulario'/>
-
         <Form/>
+        
 
     </div>
   )

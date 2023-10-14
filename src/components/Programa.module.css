@@ -5,6 +5,47 @@
     margin-top:150px;
 }
 
+.acordeon ul{
+    padding: 0;
+}
+
+.acordeon li{
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.acordeon label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor:pointer;
+    padding:10px;
+}
+
+.acordeon span{
+    transform:rotate(90deg)
+}
+
+
+.acordeon label + input[type='radio']{
+    display: none;
+}
+
+.acordeon label+input[type='radio']:checked + .content {
+    max-height: 400px;
+}
+
+.content{
+    max-height: 0px;
+    overflow: hidden;
+    transition:max-height 0.5s;
+    display: flex;
+}
+
+.content iframe, .content video{
+    width: 40%;
+}
+
 .acordeonFlex{
     display: flex;
     gap:20px
@@ -13,4 +54,8 @@
 .video{
     width: 50%;
     height: 200px;
+}
+
+.descripcion{
+    padding:10px
 }

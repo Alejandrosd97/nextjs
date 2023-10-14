@@ -22,27 +22,8 @@
     border-radius:50%;
 }
 
-.curriculum{
-    margin-top:40px;
-    font-weight: bold;
-}
 
-.curriculumButton{
-    background-color: transparent;
-    color: #e8c061;
-    padding: 8px 20px;
-    border: 3px solid #e8c061;
-    border-radius: 2px;
-    display: block;
-    margin-top:20px;
-}
-    
-.curriculumButton:hover {
-    background-color: #e8c061;
-    color: #efefef;
-    border: 3px solid #e8c061;
 
-}
 
 
 @media screen and (max-width:800px){

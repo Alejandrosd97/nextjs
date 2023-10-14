@@ -2,10 +2,11 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     gap:20px;
     position: relative;
 }
@@ -15,72 +16,51 @@
 }
 
 .caja img{
-    width: 40%;
+    width: 100%;
     border-radius:3px
 }
 
-
-.linea{
-    display:block;
-    position:absolute;
-    background-color: #000;
-    transition: transform ease-in-out 0.2s
+.verPrograma{
+    margin-top: 20px;
+    padding: 8px 16px;
+    border: 2px solid #6189e8;
+    color:#6189e8;
+    border-radius: 2px;
+    background-color:#fff;
 }
 
-.linea:nth-child(1){
-    top: 0;
-    left: calc(40% - 22px) ;
-    width: calc(60% + 22px);
-    height: 2px;
-    transform: scaleX(0);
-    transform-origin: left ;
-    transition-delay: 0.2s;
-    border-top-right-radius:2px
+.verPrograma:hover{
+    color:#fff;
+    background-color:#6189e8;
 }
 
-.enlace:hover span:nth-child(1) {
+
+@media  screen and (min-width:700px) and (max-width:900px) {
     
-    transform: scaleX(1);
-    transform-origin: left;
-    transition-delay: 0s;
+    .caja p {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
 }
 
-.linea:nth-child(3) {
-    bottom: 0;
-    left: calc(40% - 22px);
-    width: calc(60% + 22px);
-    height: 2px;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition-delay: 0s;
-    border-bottom-right-radius: 2px;
+@media screen and (min-width:700px){
+    .caja {
+        flex-direction: row;
+        margin-bottom: 40px;
+        }
+
+    .caja p {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .caja img {
+        width: 100%;
+        border-radius: 3px
+    }
 }
-
-.enlace:hover span:nth-child(3) {
-    transform: scaleX(1);
-    transform-origin: right;
-    transition-delay: 0.2s;
-}
-
-.linea:nth-child(2) {
-    right: 0;
-    top: 0;
-    width: 2px;
-    height: 100%;
-    transform: scaleY(0);
-    transform-origin: top;
-    transition-delay: 0.1s;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-}
-
-.enlace:hover span:nth-child(2) {
-    transform: scaleY(1);
-    transform-origin: top;
-    transition-delay: 0.1s;
-}
-
-
-
-
-

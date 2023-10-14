@@ -12,7 +12,7 @@ export default function ServiciosGrid() {
             <div className={styles.content}>
                 
                 <h3 className={styles.centro}>Masaje terapéutico</h3>
-                <p className={styles.centro}>masajes terapéuticos personalizados que combinan la experiencia de la fisioterapia con la relajación profunda</p>
+                <p className={styles.centro}>Masajes terapéuticos personalizados que combinan la experiencia de la fisioterapia con la relajación profunda</p>
     
             </div>
         </div>
@@ -36,7 +36,7 @@ export default function ServiciosGrid() {
             <div className={styles.content}>
                 <div>
                 <h3 className={styles.centro}>Rehabilitación</h3>
-                <p className={styles.centro}>Exercitationem atque reprehenderit vel! Quidem rem totam consectetur cumqus, vitae labore temporibus dolor cupiditate veritatis commodi.</p>
+                <p className={styles.centro}>Tras una cirugía ortopédica, te ayudaré a recuperarte más rápido y de manera segura, restaurando la función y minimizando las molestias</p>
             </div>
             </div>
         </div>
@@ -48,7 +48,7 @@ export default function ServiciosGrid() {
             <div className={styles.content}>
                 <div>
                 <h3 className={styles.centro}>Fibrolisis</h3>
-                <p className={styles.centro}>es una técnica especializada que utilizo para abordar problemas musculoesqueléticos y fasciales de manera efectiva</p>
+                <p className={styles.centro}>Mediante ganchos especializados abordo problemas musculoesqueléticos y fasciales de manera efectiva</p>
             </div>
             </div>
         </div>

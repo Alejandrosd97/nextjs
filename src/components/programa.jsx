@@ -7,7 +7,64 @@ export default function programa() {
   return (
     <div className={styles.acordeon}>
         <h1>Titulo dinamico</h1>
-        <div className="accordion" id="accordionExample">
+
+
+      <ul>
+        <li>
+          <label htmlFor='first'>acordeon 1 <span>&#x3e;</span></label> 
+          <input id='first' name='accordion' type="radio" />
+          <div className={styles.content}>
+            <iframe src="https://player.vimeo.com/video/873778793?badge=0&amp;autopause=0&amp;quality_selector=1&amp;progress_bar=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="video_prueba2"></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+            <div className={styles.descripcion}>
+            <h3>Titulo 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore nam cupiditate eius quia? Architecto placeat veniam natus, eum quia ducimus perferendis dolorum ipsum, officia aspernatur officiis illum necessitatibus perspiciatis!</p>
+            </div>
+          </div>
+        </li>
+
+        <li> 
+          <label htmlFor='second'>acordeon 2 <span>&#x3e;</span></label> 
+          <input id='second' name='accordion' type="radio" />
+          <div className={styles.content}>
+            <video src='/stars.mp4'></video>
+            <div className={styles.descripcion}>
+            <h3>Titulo 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore nam cupiditate eius quia? Architecto placeat veniam natus, eum quia ducimus perferendis dolorum ipsum, officia aspernatur officiis illum necessitatibus perspiciatis!</p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <label htmlFor='third'>acordeon 333 <span>&#x3e;</span></label> 
+          <input id='third' name='accordion' type="radio" />
+          <div className={styles.content}>
+            <video src='/stars.mp4' controls></video>
+            <div className={styles.descripcion}>
+            <h3>Titulo 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore nam cupiditate eius quia? Architecto placeat veniam natus, eum quia ducimus perferendis dolorum ipsum, officia aspernatur officiis illum necessitatibus perspiciatis!</p>
+            </div>
+          </div>
+        </li>
+        
+      </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {/* <div className="accordion" id="accordionExample">
   <div className="accordion-item">
     <h2 className="accordion-header">
       <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -44,7 +101,7 @@ export default function programa() {
       </div>
     </div>
   </div>
-</div>
+</div> */}
 </div>
   )
 }

@@ -48,7 +48,7 @@ export default function Form() {
                     <textarea required={true} id="question"></textarea>
                     <span className={`${styles.text} ${styles.textAreaText}`}>Mensaje</span>
                     <span className={styles.line}></span>
-                </div>
+                </div> 
             </div>
             <div className={`${styles.row} ${styles.privacidad}`}>
                 <input type='checkbox' required/>
@@ -59,6 +59,12 @@ export default function Form() {
         </form>
 
         <a href='https://wa.me/34675644493' target='_blank'>whatsapp</a>
+        <div className={styles.curriculum}> 
+          ¡Descarga mi currículum en el siguiente enlace!
+          <a href='../../public/curriculumAlejandroSantamaria.pdf' download>
+            <button className={styles.curriculumButton}>DESCARGAR</button>
+          </a>
+        </div>
     </div>
   )
 }
