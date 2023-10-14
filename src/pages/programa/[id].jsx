@@ -16,7 +16,7 @@ export default function programa({data}) {
 }
 
 export const getServerSideProps = async ({query}) =>{
-  const res = await fetch(`https://miportfolio-virid.vercel.app/api/programa/${query.id}`)
+  const res = await fetch(`https://miportfolio-virid.vercel.app/api/lista/${query.id}`)
   const data = await res.json()
   return {
     props :{
