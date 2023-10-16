@@ -6,7 +6,6 @@ import styles from '@/styles/listaProgramas.module.css'
 
 
 export default function listaprogramas({data}) {
-  console.log(data)
   return (
     <>
     <Navbar/>
@@ -20,7 +19,7 @@ export default function listaprogramas({data}) {
       <li>Tobillo y pie</li>
     </ul>
     {data.map((p)=>{
-      return <Programacaja key={p._id} id={p.id}/>
+      return <Programacaja key={p.id} id={p.id} titulo ={p.titulo} descripcion={p.descripcion} categoria={p.categoria} url={p.url}/>
     })}
     </div>
     
@@ -29,8 +28,12 @@ export default function listaprogramas({data}) {
 }
 
 export const getServerSideProps = async (ctx) =>{
-  const res = await fetch('https://miportfolio-virid.vercel.app//api/lista')
+  const res = await fetch('http:/localhost:3000/api/lista')
   const data = await res.json()
+
+  // const respuesta = await fetch('http:/localhost:3000/api/video')
+  // const datos = await respuesta.json()
+
   return {
     props :{
       data

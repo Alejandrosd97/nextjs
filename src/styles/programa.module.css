@@ -1,0 +1,10 @@
+.acordeon {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.descripcionGeneral {
+    margin-bottom: 50px;
+}

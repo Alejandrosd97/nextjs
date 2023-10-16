@@ -20,7 +20,7 @@ export default function NavbarProgramas() {
             <Link href='/' onClick={toggleMenu}><li > Sobre mi</li></Link>
             <Link href='/servicios' onClick={toggleMenu}><li > Servicios</li></Link>
             <Link href='/contact' onClick={toggleMenu}><li> Contacto</li></Link>
-            <Link href='/listaProgramas' onClick={toggleMenu}><li> Programas</li></Link>
+            <Link href='/ejercicio' onClick={toggleMenu}><li> Ejercicio</li></Link>
         </ul>
             {
                 menu ? <AiOutlineClose className={styles.icon} size={20} onClick={toggleMenu}/> 

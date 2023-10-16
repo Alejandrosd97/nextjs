@@ -1,37 +1,27 @@
-.acordeon{
-    width: 90%;
-    max-width: 800px;
-    margin:auto;
-    margin-top:150px;
-}
-
-.acordeon ul{
-    padding: 0;
-}
-
-.acordeon li{
+.lista{
     background-color: white;
     margin-bottom: 10px;
 }
 
-.acordeon label{
+.barra{
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor:pointer;
     padding:10px;
+    padding-left:0
 }
 
-.acordeon span{
+.flecha{
     transform:rotate(90deg)
 }
 
 
-.acordeon label + input[type='radio']{
+.hiddenInput{
     display: none;
 }
 
-.acordeon label + input[type='radio']:checked + .content {
+.hiddenInput:checked + .content {
     max-height: 400px;
     margin-top: 10px;
 }
@@ -63,10 +53,6 @@
 
 .descripcionGeneral{
     margin-bottom: 50px;
-}
-
-.content h3{
-    color: #6189e8
 }
 
 @media screen and (min-width:800px){

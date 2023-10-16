@@ -12,8 +12,6 @@ export async function dbConnect (){
         return
     }
     const db = await connect(connectionString)
-    console.log(db.connections[0].readyState)
-    console.log(db.connection.db.name)
 }
 
 connection.on('connected', ()=>{

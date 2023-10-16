@@ -10,17 +10,14 @@ const videoSchema = new Schema({
         required :true
     },
     fecha : Date,
-    categoria : { 
-        type: String,
-        required :true
-    },
     url : { 
         type: String,
         required :true
     },
     lista : {
         type : Schema.Types.ObjectId,
-        ref: 'Lista'
+        ref: 'Lista',
+        required : true
     }
 
 })
