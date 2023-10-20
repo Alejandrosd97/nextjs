@@ -16,6 +16,7 @@
     left:50%;
     transform:translate(-50%, -50%);
     color: #efefef;
+    opacity: 0
 }
 
 .main h1{

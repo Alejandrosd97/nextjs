@@ -28,7 +28,7 @@ export default function listaprogramas({data}) {
 }
 
 export const getServerSideProps = async (ctx) =>{
-  const res = await fetch('http:/localhost:3000/api/lista')
+  const res = await fetch('https://miportfolio-virid.vercel.app/api/lista')
   const data = await res.json()
 
   // const respuesta = await fetch('http:/localhost:3000/api/video')

@@ -28,10 +28,10 @@ export default function programa({data, datos}) {
 }
 
 export const getServerSideProps = async ({query}) =>{
-  const res = await fetch(`http:/localhost:3000/api/lista/${query.id}`)
+  const res = await fetch(`https://miportfolio-virid.vercel.app//api/lista/${query.id}`)
   const data = await res.json()
 
-  const respuesta = await fetch(`http:/localhost:3000/api/video/${query.id}`)
+  const respuesta = await fetch(`https://miportfolio-virid.vercel.app//api/video/${query.id}`)
   const datos = await respuesta.json()
   console.log(datos)
   return {
