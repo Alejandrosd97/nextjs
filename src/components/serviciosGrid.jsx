@@ -7,7 +7,7 @@ export default function ServiciosGrid() {
     <div className={styles.contenedor}>
         <div className={styles.caja}>
             <div className={styles.imgBox}>
-                <img src='https://picsum.photos/400/300' alt="" />
+                <img src='/masaje4.jpg' alt="" />
             </div>
             <div className={styles.content}>
                 

@@ -23,15 +23,15 @@
 .verPrograma{
     margin-top: 20px;
     padding: 8px 16px;
-    border: 2px solid #6189e8;
-    color:#6189e8;
+    border: 2px solid #26495c;
+    color:#26495c;
     border-radius: 2px;
     background-color:#fff;
 }
 
 .verPrograma:hover{
     color:#fff;
-    background-color:#6189e8;
+    background-color:#26495c;
 }
 
 

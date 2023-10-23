@@ -5,7 +5,7 @@
 
 .barra{
     display: flex;
-    background-color: #6189e8;
+    background-color: #26495c;
     color :white;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +44,7 @@
     margin-bottom:10px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(97, 137, 232, 0.1);
+    background-color: rgba(38, 73, 92, 0.1);
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
 

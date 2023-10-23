@@ -22,7 +22,6 @@ export default async function handler(req, res) {
       const {titulo, descripcion, url, lista} = body
 
       const lis = await Lista.findOne({titulo: lista}).exec()
-      console.log(lis)
 
       if (!lis){
         return res.status(400).json({msg : 'La lista no existe'})
@@ -36,7 +35,6 @@ export default async function handler(req, res) {
     })
 
 
-       // console.log(lis.videos)
         if (lis.videos){
             lis.videos = lis.videos.concat(newVideo._id)
             await lis.save()
@@ -46,7 +44,6 @@ export default async function handler(req, res) {
             await newVideo.save()
         }
        
-        //console.log(lis.videos)
 
 
     const newV = await newVideo.save()

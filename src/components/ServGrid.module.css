@@ -43,6 +43,10 @@
     padding:15px;
 }
 
+.content h3{
+    color:#e8c061;
+}
+
 @media screen and (max-width:1240px){
     .contenedor {
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));        }

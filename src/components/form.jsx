@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import styles from './Form.module.css'
-import Aos from 'aos'
+import Aos from 'aos' 
 import 'aos/dist/aos.css'
 
 
@@ -25,7 +25,49 @@ export default function Form() {
     <div data-aos='fade-right' className={styles.contenedorForm}>
         <h2 id='contacto' className='titulo'>CONTACTO</h2>
         <p>Escríbeme un mensaje y me pondré en contacto contigo lo antes posible</p>
-        <form className={styles.form}>
+
+
+        <form>
+            <div className={styles.row}>
+                <div className={styles.inputBox}>
+                    <input type="text" required={true} />
+                    <span className={styles.text}>Nombre</span>
+                </div>
+            </div>
+
+            <div className={styles.row}>
+                <div className={styles.inputBox}>
+                    <input type="email" required={true}/>
+                    <span className={styles.text}>Email</span>
+                </div>
+            </div>
+
+            <div className={styles.row}>
+                <div className={`${styles.inputBox} ${styles.textArea}`}>
+                    <textarea required={true} id="question"></textarea>
+                    <span className={`${styles.text} ${styles.textAreaText}`}>Mensaje</span>
+                </div> 
+            </div>
+            <div className={`${styles.row} ${styles.privacidad}`}>
+                <input type='checkbox' required/>
+                <p>He leído y acepto la Política de Privacidad </p>
+            </div>
+
+            <button id='boton' className={styles.enviar} type='submit'>Enviar</button>
+
+
+        </form>
+
+
+
+
+
+
+
+
+
+
+        {/* <form className={styles.form}>
             <div className={styles.row}>
                 <div className={styles.inputBox}>
                     <input type="text" required={true} />
@@ -56,9 +98,9 @@ export default function Form() {
             </div>
 
             <button id='boton' className={styles.enviar} type='submit'>Enviar</button>
-        </form>
+        </form> */}
 
-        <a href='https://wa.me/34675644493' target='_blank'>whatsapp</a>
+        {/* <a href='https://wa.me/34675644493' target='_blank'>whatsapp</a> */}
         <div className={styles.curriculum}> 
           ¡Descarga mi currículum en el siguiente enlace!
           <a href='../../public/curriculumAlejandroSantamaria.pdf' download>

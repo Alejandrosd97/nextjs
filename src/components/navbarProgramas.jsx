@@ -14,7 +14,7 @@ export default function NavbarProgramas() {
   return (
     <div  className={styles.navbar}>
         <div className={styles.titulo}>
-            ALEJANDRO SANTAMARIA
+            <img src="/logoNegro-simple.png" alt="" />
         </div>
         <ul className={menu ? styles.active : styles.hidden}>
             <Link href='/' onClick={toggleMenu}><li > Sobre mi</li></Link>

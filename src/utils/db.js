@@ -1,7 +1,6 @@
 import { connect, connection } from 'mongoose'
 
-const connectionString = 'mongodb+srv://Alejandro:lisboaportugal@api-tutorial.gcrbz.mongodb.net/nextjs?retryWrites=true&w=majority'
-
+import 'dotenv/config'
 
 const conn = {
     isConnected : false
@@ -11,7 +10,7 @@ export async function dbConnect (){
     if (conn.isConnected) {
         return
     }
-    const db = await connect(connectionString)
+    const db = await connect(process.env.MONGODB_KEY)
 }
 
 connection.on('connected', ()=>{
