@@ -26,7 +26,7 @@
 }
 
 .navbar .titulo img{
-    width: 350px;
+    width: 150px;
 }
 
 .navbar a{ 
@@ -99,6 +99,8 @@
         font-size: 24px;
         padding:20px
     }
+
+    
 }
 
 @media screen and (min-width:900px){
@@ -113,6 +115,10 @@
         width: auto;
         left: auto !important;
         transition: none;
+    }
+
+    .navbar .titulo img {
+        width: 350px;
     }
         
 }
