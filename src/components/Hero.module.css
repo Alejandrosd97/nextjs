@@ -4,7 +4,7 @@
     background-position: 20%;
     
     background-attachment: fixed;
-    height: 120vh;
+    height: 100vh;
     position:relative;
 } 
 
@@ -50,7 +50,7 @@
 /* @media (orientation: portrait) {
     .hero {
         max-height: 700px;
-    }
+    } 
 } */
 
 @media screen and (min-width:1300px){
