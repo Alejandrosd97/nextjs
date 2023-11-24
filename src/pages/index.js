@@ -12,10 +12,8 @@ export default function Home() {
   return (
     <>
     <Navbar/>
-    <Hero titulo='Soy Alejandro' boton='Ver mas' enlace='#sobremi' subtitulo='Fisioterapeuta autónmo'/>
+    <Hero titulo='Soy Alejandro' boton='Ver mas' enlace='#sobremi' subtitulo='Fisioterapeuta autónomo'/>
     <SobreMi/>
     </>
-      
-       
   )
 }

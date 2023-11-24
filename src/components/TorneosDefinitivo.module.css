@@ -17,6 +17,7 @@
 
 .segundaFila{
     flex-direction: column-reverse;
+    margin-top:50px;
 }
 
 @media screen and (min-width:900px) {
@@ -35,5 +36,6 @@
 
     .segundaFila{
         flex-direction: row;
+        margin-top:0px;
     }
 }

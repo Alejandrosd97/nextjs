@@ -39,7 +39,10 @@ export default function Navbar() {
   return (
     <div style={navbarColor} className={styles.navbar}>
         <div className={styles.titulo}>
-            <img src="/logoNegro-simple.png" alt="" />
+            <Link href='/' onClick={toggleMenu}>            
+                <img src="/logoNegro-simple.png" alt="" />
+            </Link>
+
         </div>
         <ul className={menu ? styles.active : styles.hidden}>
             <Link href='/' onClick={toggleMenu}><li style={textColor}> Sobre mi</li></Link>

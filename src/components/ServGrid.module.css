@@ -13,6 +13,11 @@
     flex-direction: column;
 }
 
+.centro {
+    text-align: left;
+    width:100%
+}
+
 .caja:nth-child(even){
     flex-direction: column-reverse;
 }

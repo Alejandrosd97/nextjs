@@ -27,7 +27,7 @@ export default function Hero(props) {
         else{ 
             setButton('inline')
         }
-        }
+        } 
         window.addEventListener('scroll', changeVisibility)
         window.addEventListener('scroll', changeButton)
 

@@ -10,11 +10,15 @@ export default function Footer() {
 
         </div>
         <ul>
-          <li><a href="/#home"> HOME</a></li>
-          <li><a href="/#sobreMi">SOBRE MI</a></li>
-          <li><a href="/#contacto">CONTACTO</a></li>
-          <li><a href="/#ejercicio">EJERCICIO</a></li>
-          <li><a href="/#ejercicio">POLÍTICA DE PRIVACIDAD</a></li>
+          <div className={styles.linea}>
+            <li><a href="/#sobreMi">SOBRE MI</a></li>
+            <li><a href="/#servicios"> SERVICIOS</a></li>
+          </div>
+          <div className={styles.linea}>
+           <li><a href="/#contacto">CONTACTO</a></li>
+            <li><a href="/#ejercicio">EJERCICIO</a></li>
+          </div>
+          {/* <li><a href="/#ejercicio">POLÍTICA DE PRIVACIDAD</a></li> */}
         </ul>
         <div> alex.santamaria97@gmail.com </div>
     </div>

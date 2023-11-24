@@ -3,6 +3,8 @@ import AcordeonItem from '@/components/acordeonItem'
 import styles from '@/styles/programa.module.css'
 
 import {React} from 'react'
+import {getSession } from 'next-auth/react'
+
 
 export default function programa({data, datos}) {
 
@@ -27,13 +29,24 @@ export default function programa({data, datos}) {
   )
 }
 
-export const getServerSideProps = async ({query}) =>{
-  const res = await fetch(`https://miportfolio-virid.vercel.app//api/lista/${query.id}`)
+export const getServerSideProps = async (ctx) =>{
+  const res = await fetch(`https://miportfolio-virid.vercel.app//api/lista/${ctx.query.id}`)
   const data = await res.json()
 
-  const respuesta = await fetch(`https://miportfolio-virid.vercel.app//api/video/${query.id}`)
+  const respuesta = await fetch(`https://miportfolio-virid.vercel.app//api/video/${ctx.query.id}`)
   const datos = await respuesta.json()
-  console.log(datos)
+
+  const session = await getSession(ctx)
+
+  if (!session){
+    return {redirect : 
+      {
+        destination : '/login'
+      }
+    }
+  }
+
+
   return {
     props :{
       data,

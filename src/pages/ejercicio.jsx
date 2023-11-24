@@ -2,10 +2,14 @@ import React from 'react'
 import Navbar from '@/components/navbarProgramas'
 import Programacaja from '@/components/programacaja'
 import styles from '@/styles/listaProgramas.module.css'
+import {getSession } from 'next-auth/react'
 
 
 
-export default function listaprogramas({data}) {
+
+export default function listaprogramas({info}) {
+
+
   return (
     <>
     <Navbar/>
@@ -18,7 +22,7 @@ export default function listaprogramas({data}) {
       <li>Columna Dorsal</li>
       <li>Tobillo y pie</li>
     </ul>
-    {data.map((p)=>{
+    {info.map((p)=>{
       return <Programacaja key={p.id} id={p.id} titulo ={p.titulo} descripcion={p.descripcion} categoria={p.categoria} url={p.url}/>
     })}
     </div>
@@ -29,12 +33,22 @@ export default function listaprogramas({data}) {
 
 export const getServerSideProps = async (ctx) =>{
   const res = await fetch('https://miportfolio-virid.vercel.app/api/lista')
-  const data = await res.json()
+  const info = await res.json()
+
+  const session = await getSession(ctx)
+
+  if (!session){
+    return {redirect : 
+      {
+        destination : '/login'
+      }
+    }
+  }
 
 
   return {
     props :{
-      data
+      info
     }
   }
 }

@@ -9,7 +9,7 @@ export default function contact() {
   return (
     <div>
         <Navbar/>
-        <Hero titulo='Contacto' boton='¡Hablemos!' enlace='#contacto' subtitulo='Escríbeme un mensaje a través del siguiente formulario'/>
+        <Hero titulo='Contacto' boton='¡Hablemos!' enlace='#contacto' subtitulo='Contacta conmigo a través del formulario'/>
         <Form/>
         
 

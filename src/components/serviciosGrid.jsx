@@ -7,7 +7,7 @@ export default function ServiciosGrid() {
     <div className={styles.contenedor}>
         <div className={styles.caja}>
             <div className={styles.imgBox}>
-                <img src='/masaje4.jpg' alt="" />
+                <img src='/masaje4.jpg' alt="fotografía de una persona recibiendo un masaje" />
             </div>
             <div className={styles.content}>
                 
@@ -19,7 +19,7 @@ export default function ServiciosGrid() {
 
         <div className={styles.caja}>
             <div className={styles.imgBox}>
-                <img src='/ejercicio.jpg' alt="" />
+                <img src='/ejercicio.jpg' alt="Fotografía de unas mancuernas en el suelo" />
             </div>
             <div className={styles.content}>
                 <div>
@@ -31,7 +31,7 @@ export default function ServiciosGrid() {
         
         <div className={styles.caja}>
             <div className={styles.imgBox}>
-                <img src='/muletas.jpg' alt="" />
+                <img src='/muletas.jpg' alt="Fotografía de unas muletas" />
             </div>
             <div className={styles.content}>
                 <div>

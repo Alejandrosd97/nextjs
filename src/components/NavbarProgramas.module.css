@@ -85,6 +85,10 @@
         backdrop-filter: blur(4px);
     }
 
+        .navbar .titulo img {
+            width: 200px;
+        }
+
     .navbar a {
         font-size: 24px;
         padding: 20px

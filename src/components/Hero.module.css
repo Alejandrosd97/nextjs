@@ -18,7 +18,7 @@
     color: #efefef;
     opacity: 0
 }
-
+ 
 .main h1{
     text-transform:uppercase;
 }
@@ -47,16 +47,18 @@
     }
 }
 
-@media (orientation: portrait) {
+/* @media (orientation: portrait) {
     .hero {
         max-height: 700px;
     }
-}
+} */
 
-@media screen and (min-width:1230px){
+@media screen and (min-width:1300px){
     .main{
         color:#efefef !important;
-        left:40%
+        width:350px;
+        text-align:center;
+        left:48%
     }
 
     .main h1 {

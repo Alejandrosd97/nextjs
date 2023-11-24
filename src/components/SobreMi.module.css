@@ -15,8 +15,30 @@
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+    background-color: rgba(38, 73, 92, 1);
+    color : white
 }
 
+.curriculum {
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.curriculumButton {
+    background-color: transparent;
+    color: #e8c061;
+    padding: 8px 20px;
+    border: 3px solid #e8c061;
+    border-radius: 2px;
+    display: block;
+    margin-top: 20px;
+}
+
+.curriculumButton:hover {
+    background-color: #e8c061;
+    color: #efefef;
+    border: 3px solid #e8c061;
+}
 
 .informacionPersonal img{
     border-radius:3px;
