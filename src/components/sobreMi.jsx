@@ -22,10 +22,12 @@ export default function SobreMi() {
 
   return (
     <div data-aos='fade-right' id='sobremi' className={styles.contenedor}>
-        <h1 >Sobre mi</h1>
+        <h2 >SOBRE MÍ</h2>
         <div className={styles.informacionPersonal}>
             <img src="https://picsum.photos/200" alt="" />
-            <p>Lorem ipsum dolor. Odio illum facilis consequatur aperiam repudiandae. Cum, fugiat quisquam, omnis molestiae aut, error dolore et itaque ullam blanditiis rem vitae voluptate possimus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, quam voluptatum repellat vel doloremque iste illum atque! Laboriosam voluptatum fugit, sequi quisquam dicta eveniet molestias ut inventore illum delectus dignissimos.</p>
+            <p> Soy Alejandro, un apasionado fisioterapeuta con experiencia que busca oportunidades en Alemania. Con habilidades en español, inglés y alemán, estoy comprometido con proporcionar atención integral y personalizada a mis pacientes. Mi objetivo es integrarme en el sistema de salud alemán, aportando mi experiencia al bienestar de la comunidad.
+
+Explora mi sitio para conocer más sobre mis servicios y mi trayectoria profesional. ¡Espero tener la oportunidad de colaborar contigo para alcanzar tus metas de salud y bienestar</p>
         </div>
         <Torneos/>
           <div className={styles.curriculum}> 

@@ -8,6 +8,7 @@
 .contenedor h1{
     margin-bottom: 1.6em;
     padding-left: 0.25em;
+    
 }
 
 .informacionPersonal{
@@ -22,6 +23,7 @@
 .curriculum {
     margin-top: 40px;
     font-weight: bold;
+    font-size: 20px
 }
 
 .curriculumButton {
@@ -30,6 +32,7 @@
     padding: 8px 20px;
     border: 3px solid #e8c061;
     border-radius: 2px;
+    letter-spacing:2px;
     display: block;
     margin-top: 20px;
 }

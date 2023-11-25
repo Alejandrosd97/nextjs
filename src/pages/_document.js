@@ -7,7 +7,8 @@ export default function Document() {
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q1YK24LVJ4"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@300&family=Nunito+Sans:wght@400;600&family=Orbitron:wght@800&family=Quicksand:wght@400;500&family=Roboto:wght@300;500;900&family=Source+Sans+Pro:wght@400;700&family=Varela&display=swap" rel="stylesheet"/>
+        {/* <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@300&family=Nunito+Sans:wght@400;600&family=Orbitron:wght@800&family=Quicksand:wght@400;500&family=Roboto:wght@300;500;900&family=Source+Sans+Pro:wght@400;700&family=Varela&display=swap" rel="stylesheet"/> */}
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Barlow+Semi+Condensed:wght@400;600&family=Poppins&family=Rubik:ital,wght@0,300;0,500;0,600;1,300&display=swap" rel="stylesheet"/>
 <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"

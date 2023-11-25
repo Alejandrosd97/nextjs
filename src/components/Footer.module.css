@@ -24,6 +24,10 @@
     gap:10px;
 }
 
+.linea li{
+    letter-spacing:2px
+}
+
 .logo{
     width: 90%;
     max-width: 500px;

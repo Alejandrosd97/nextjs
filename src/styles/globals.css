@@ -51,7 +51,7 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   margin: 0;
-  font-family: 'Poppins';
+  font-family: 'Barlow Semi Condensed';
 }
 
 
@@ -63,5 +63,12 @@ a {
 li{
     list-style-type: none;
     padding:0;
+}
+
+h2{
+  font-weight:bold;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-size: 40px;
 }
 

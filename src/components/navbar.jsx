@@ -48,7 +48,7 @@ export default function Navbar() {
             <Link href='/' onClick={toggleMenu}><li style={textColor}> Sobre mi</li></Link>
             <Link href='/servicios' onClick={toggleMenu}><li style={textColor}> Servicios</li></Link>
             <Link href='/contact' onClick={toggleMenu}><li style={textColor}> Contacto</li></Link>
-            <Link href='/ejercicio' onClick={toggleMenu}><li style={textColor}> Ejercicio</li></Link>
+            {/* <Link href='/ejercicio' onClick={toggleMenu}><li style={textColor}> Ejercicio</li></Link> */}
         </ul>
             {
                 menu ? <AiOutlineClose className={styles.icon} style={textColor} size={20} onClick={toggleMenu}/> 

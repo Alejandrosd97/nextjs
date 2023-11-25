@@ -16,7 +16,7 @@ export default function Footer() {
           </div>
           <div className={styles.linea}>
            <li><a href="/#contacto">CONTACTO</a></li>
-            <li><a href="/#ejercicio">EJERCICIO</a></li>
+            {/* <li><a href="/#ejercicio">EJERCICIO</a></li> */}
           </div>
           {/* <li><a href="/#ejercicio">POLÍTICA DE PRIVACIDAD</a></li> */}
         </ul>
