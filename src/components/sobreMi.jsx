@@ -33,7 +33,21 @@ export default function SobreMi({data}) {
 Explora mi sitio para conocer más sobre mis servicios y mi trayectoria profesional. ¡Espero tener la oportunidad de colaborar contigo para alcanzar tus metas de salud y bienestar</p> */}
         </div>
         <Torneos data={data}/>
+        <div className={styles.posgrados}>
+          <h2>WEITERBILDUNG</h2>
+           <ul>
+            <li className={styles.formacion}><span className={styles.bold}> Universitätsexperte für Physiotherapie des Bewegungsapparates</span> - 375 Stunden / 15ECTS</li>
+            <li className={styles.formacion}><span className={styles.bold}>Wirbelsäulenmanipulationen</span> - 25 Stunden</li>
+            <li className={styles.formacion}><span className={styles.bold}>Manuelle und manipulative Therapie der peripheren Gelenke</span> - 15 Stunden</li>
+            <li className={styles.formacion}><span className={styles.bold}>Physiotherapie bei Halsschmerzen, Radikulopathien und Bandscheibenvorfällen</span> - 25 Stunden</li>
+            <li className={styles.formacion}><span className={styles.bold}>Manuelle Therapie bei Lendenwirbelschmerzen und Ischias</span> - 15 Stunden</li>
+            <li className={styles.formacion}><span className={styles.bold}>Knöchel und Fuß: Knochen- und Weichteilverletzungen</span> - 25 Stunden</li>
+            <li className={styles.formacion}><span className={styles.bold}>Anwendung von Bandagen in der klinischen Praxis: neuromuskuläre Bandagen (Kinesiotaping) und funktionelle Bandagen</span> - 20 Stunden</li>
+            <li className={styles.formacion}><span className={styles.bold}>Physiotherapeutische Behandlung von Funktionsstörungen des Kiefergelenks</span> - 15 Stunden</li>
+          </ul>
+        </div>
           <div className={styles.curriculum}> 
+         
           {/* ¡Descarga mi currículum en el siguiente enlace! */}
            {data.home.curriculum}
           <a href='../../public/curriculumAlejandroSantamaria.pdf' download>

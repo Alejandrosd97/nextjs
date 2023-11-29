@@ -48,6 +48,31 @@
 }
 
 
+.formacion{
+    font-size: 20px;
+    margin-top:16px;
+    list-style-type: disc;
+}
+
+.bold{
+    font-weight:bold;
+    color:#26495c;
+    position:relative
+}
+
+.bold::after{
+    content: '';
+    height:12px;
+    background-color:rgba(232, 192, 97, 0.5);
+    width: calc(100% - 5px);
+    position:absolute;
+    border-radius:1px;
+    bottom:-2px;
+    z-index:-1;
+    left:10px
+
+}
+
 
 
 
