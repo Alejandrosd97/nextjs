@@ -11,11 +11,11 @@ export default function Footer() {
         </div>
         <ul>
           <div className={styles.linea}>
-            <li><a href="/#sobreMi">SOBRE MI</a></li>
-            <li><a href="/#servicios"> SERVICIOS</a></li>
+            <li><a href="/#sobreMi">ÜBER MICH</a></li>
+            <li><a href="/#servicios">DIENSTE</a></li>
           </div>
           <div className={styles.linea}>
-           <li><a href="/#contacto">CONTACTO</a></li>
+           <li><a href="/#contacto">KONTAKT</a></li>
             {/* <li><a href="/#ejercicio">EJERCICIO</a></li> */}
           </div>
           {/* <li><a href="/#ejercicio">POLÍTICA DE PRIVACIDAD</a></li> */}

@@ -9,7 +9,7 @@ import Torneos from './torneos'
 
 
 
-export default function SobreMi() {
+export default function SobreMi({data}) {
 
    useEffect(()=>{
         const animation = ()=>{
@@ -22,18 +22,22 @@ export default function SobreMi() {
 
   return (
     <div data-aos='fade-right' id='sobremi' className={styles.contenedor}>
-        <h2 >SOBRE MÍ</h2>
+        <h2>ÜBER MICH</h2>
         <div className={styles.informacionPersonal}>
             <img src="https://picsum.photos/200" alt="" />
-            <p> Soy Alejandro, un apasionado fisioterapeuta con experiencia que busca oportunidades en Alemania. Con habilidades en español, inglés y alemán, estoy comprometido con proporcionar atención integral y personalizada a mis pacientes. Mi objetivo es integrarme en el sistema de salud alemán, aportando mi experiencia al bienestar de la comunidad.
 
-Explora mi sitio para conocer más sobre mis servicios y mi trayectoria profesional. ¡Espero tener la oportunidad de colaborar contigo para alcanzar tus metas de salud y bienestar</p>
+            <p>{data.home.main}</p>
+
+            {/* <p> Soy Alejandro, un apasionado fisioterapeuta con experiencia que busca oportunidades en Alemania. Con habilidades en español, inglés y alemán, estoy comprometido con proporcionar atención integral y personalizada a mis pacientes. Mi objetivo es integrarme en el sistema de salud alemán, aportando mi experiencia al bienestar de la comunidad.
+
+Explora mi sitio para conocer más sobre mis servicios y mi trayectoria profesional. ¡Espero tener la oportunidad de colaborar contigo para alcanzar tus metas de salud y bienestar</p> */}
         </div>
-        <Torneos/>
+        <Torneos data={data}/>
           <div className={styles.curriculum}> 
-          ¡Descarga mi currículum en el siguiente enlace!
+          {/* ¡Descarga mi currículum en el siguiente enlace! */}
+           {data.home.curriculum}
           <a href='../../public/curriculumAlejandroSantamaria.pdf' download>
-            <button className={styles.curriculumButton}>DESCARGAR</button>
+            <button className={styles.curriculumButton}> {data.home.descargar}</button>
           </a>
         </div>
     </div>

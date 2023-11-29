@@ -45,9 +45,9 @@ export default function Navbar() {
 
         </div>
         <ul className={menu ? styles.active : styles.hidden}>
-            <Link href='/' onClick={toggleMenu}><li style={textColor}> Sobre mi</li></Link>
-            <Link href='/servicios' onClick={toggleMenu}><li style={textColor}> Servicios</li></Link>
-            <Link href='/contact' onClick={toggleMenu}><li style={textColor}> Contacto</li></Link>
+            <Link href='/' onClick={toggleMenu}><li style={textColor}>Über mich</li></Link>
+            <Link href='/servicios' onClick={toggleMenu}><li style={textColor}>Dienste</li></Link>
+            <Link href='/contact' onClick={toggleMenu}><li style={textColor}> Kontakt</li></Link>
             {/* <Link href='/ejercicio' onClick={toggleMenu}><li style={textColor}> Ejercicio</li></Link> */}
         </ul>
             {

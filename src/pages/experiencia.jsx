@@ -4,6 +4,7 @@ import ExperienciaComp from '@/components/experienciaComp'
 import Navbar from '@/components/navbar'
 
 
+
 export default function activities() {
   return (
     <div>
