@@ -2,7 +2,7 @@ import Form from '@/components/form'
 import React from 'react'
 import Hero from '@/components/hero'
 import Navbar from '@/components/navbar'
-import data from '../assets/data.js'
+import data from '../assets/dataAleman.js'
 
 
 

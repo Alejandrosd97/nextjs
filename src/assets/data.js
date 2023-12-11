@@ -1,36 +1,42 @@
 export default {
     titulos :{
-        alejandro : 'Ich bin Alejandro',
-        sobreMi : 'Selbständiger Physiotherapeut',
-        servicios : 'Dienste',
-        serviciosSubtitulo : 'Finde heraus, was ich für dich tun kann',
-        contact : 'Kontakt',
-        contactSubtitulo : 'Kontaktieren Sie mich über das Formular',
-        ver : 'Besuchen'
+        alejandro : 'Soy Alejandro',
+        sobreMi : 'Fisioterapeuta autónomo',
+        servicios : 'Servicios',
+        serviciosSubtitulo : 'Descubre los que puedo hacer por ti',
+        contact : 'Contacto',
+        contactSubtitulo : 'Contáctame a través del siguiente formulario',
+        ver : 'Ver'
     },
     home : {
-        titulo : 'Über mich',
-        main : 'Ich bin Alejandro, ein leidenschaftlicher Physiotherapeut mit Erfahrung, der nach Möglichkeiten in Deutschland sucht. Mit Sprachkenntnissen in Spanisch, Englisch und Deutsch bin ich verpflichtet, meinen Patienten eine umfassende und personalisierte Betreuung zu bieten. Mein Ziel ist es, mich in das deutsche Gesundheitssystem zu integrieren und meine Erfahrungen zum Wohle der Gemeinschaft einzubringen. Erkunden Sie meine Website, um mehr über meine Dienstleistungen und meine berufliche Laufbahn zu erfahren. Ich hoffe, die Möglichkeit zu haben, mit Ihnen zusammenzuarbeiten, um Ihre Gesundheit und Wellness-Ziele zu erreichen',
-        tenis : 'Im Laufe der Jahre hatte ich die Möglichkeit, in mehreren offiziellen Tennisturnieren beteiligt sein. Diese Erfahrung hat mein Verständnis für die körperlichen Herausforderungen, denen Sportler in der Welt des Sports gegenüberstehen, bereichert. Mein Ziel ist es, den Spielern zu helfen, Verletzungen zu überwinden, neue zu verhindern und ihre Leistung auf dem Platz zu maximieren',
-        ejercicio : 'In meinem Ansatz als Physiotherapeut ist therapeutische Bewegung essentiell. Ich glaube an die Kraft der Bewegung, um Schmerzen zu lindern und die Lebensqualität zu verbessern. Entwerfen Sie personalisierte Trainingsprogramme basierend auf Ihren individuellen Bedürfnissen. Ich arbeite mit dir, um dich von Verletzungen zu erholen, deinen Körper zu stärken und zukünftigen Gesundheitsproblemen vorzubeugen.',
-        curriculum : 'Laden Sie meinen Lebenslauf unter folgendem Link herunter!',
-        descargar : 'Herunterladen'
+        titulo : 'Sobre mí',
+        main : 'Soy Alejandro, un fisioterapeuta apasionado con experiencia que busca oportunidades en Suiza. Con conocimientos de español, inglés y alemán, me comprometo a ofrecer a mis pacientes una atención integral y personalizada. Mi objetivo es integrarme en el sistema sanitario suizo y aportar mi experiencia en beneficio de la comunidad. Explore mi sitio web para obtener más información sobre mis servicios y mi carrera profesional. Espero tener la oportunidad de trabajar con usted para alcanzar sus objetivos de salud y bienestar',
+        tenis : 'A lo largo de los años he tenido la oportunidad de participar en varios torneos oficiales de tenis. Esta experiencia ha enriquecido mi comprensión de los retos físicos a los que se enfrentan los deportistas en el mundo del deporte. Mi objetivo es ayudar a los jugadores a superar lesiones, prevenir otras nuevas y maximizar su rendimiento en el campo',
+        ejercicio : 'En mi enfoque como fisioterapeuta, el ejercicio terapéutico es esencial. Creo en el poder del movimiento para aliviar el dolor y mejorar la calidad de vida. Diseñe programas de entrenamiento personalizados basados en sus necesidades individuales. Trabajo contigo para recuperarte de lesiones, fortalecer tu cuerpo y prevenir futuros problemas de salud.',
+        curriculum : 'Descarga mi currículum a través del siguiente enlace',
+        descargar : 'Descargar'
     },
     servicios :{
-        main : 'Ich lade Sie ein, die personalisierten Dienstleistungen zu kennen, die ich anbiete, um Ihre Gesundheit, Wohlbefinden und Lebensqualität zu verbessern. Mein Fokus liegt auf Ihnen und Ihnen dabei zu helfen, Ihre Gesundheits- und Bewegungsziele zu erreichen. Finde heraus, wie ich Teil deines Weges zu einem aktiven und schmerzfreien Leben sein kann!',
-        ejercicio : 'Therapeutische Übung',
-        ejercicioExplicacion : 'Ich entwerfe personalisierte Trainingsprogramme, die helfen, meine Patienten zu stärken, zu rehabilitieren und ihre körperliche Funktionsfähigkeit zu verbessern',
-        masaje : 'Therapeutische Massage',
-        masajeExplicacion : 'Personalisierte therapeutische Massagen, die die Erfahrung der Physiotherapie mit Tiefenentspannung verbinden',
-        rehabilitacion : 'Rehabilitation',
-        rehabilitacionExplicacion : 'Nach einer orthopädischen Operation werde ich Ihnen helfen, sich schneller und sicherer zu erholen, die Funktion wiederherzustellen und die Beschwerden zu minimieren',
-        fibrolisis : 'Manuelle Therapie',
-        fibrolisisExplicacion : 'Ich bin spezialisiert auf manuelle Therapie. Mit manuellen Techniken versuche ich, deine Beweglichkeit zu verbessern, Schmerzen zu lindern und deine Funktion wiederherzustellen.'
-    },
+        main : 'Los invito a conocer los servicios personalizados que ofrezco para mejorar su salud, bienestar y calidad de vida. Mi enfoque está en ti y en ayudarte a alcanzar tus objetivos de salud y actividad física. ¡Descubre cómo puedo ser parte de tu camino hacia una vida activa y sin dolor!',
+        ejercicio : 'Ejercicio terapéutico',
+        ejercicioExplicacion : 'Diseño programas de entrenamiento personalizados que ayudan a fortalecer a mis pacientes, a rehabilitarlos y a mejorar su función física',
+        masaje : 'Masage terapéutico',
+        masajeExplicacion : 'Masajes terapéuticos personalizados que combinan la experiencia de la fisioterapia con la relajación profunda',
+        rehabilitacion : 'Rehabilitación',
+        rehabilitacionExplicacion : 'Después de una cirugía ortopédica, lo ayudaré a recuperarse más rápido y más seguro, restaurar la función y minimizar las molestias',
+        fibrolisis : 'Terapia manual',
+        fibrolisisExplicacion : 'Me especializo en terapia manual. Con técnicas manuales intento mejorar tu movilidad, aliviar el dolor y restaurar tu función'
+    }, 
     contacto :{
-        main : 'Schreiben Sie mir eine Nachricht und ich melde mich so schnell wie möglich bei Ihnen',
-        nombre : 'Name',
-        mensaje : 'Nachricht',
-        enviar : 'Schicken'
+        main : 'Escríbeme un mensaje y me pondré en contacto contigo lo antes posible',
+        nombre : 'Nombre',
+        mensaje : 'Mensaje',
+        enviar : 'Enviar'
+    },
+    navbar : {
+        sobreMi : 'Sobre mí',
+        servicios :'Servicios',
+        contacto : 'Contacto',
+        formacion : 'Formación adicional'
     }
 }

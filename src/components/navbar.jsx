@@ -2,6 +2,8 @@ import {React, useEffect, useState} from 'react'
 import styles from './Navbar.module.css'
 import Link from 'next/link'
 import {AiOutlineMenu , AiOutlineClose} from 'react-icons/ai'
+import data from '../assets/dataAleman.js'
+
 
 export default function Navbar() {
     const [color, setColor]= useState('white')
@@ -45,9 +47,9 @@ export default function Navbar() {
 
         </div>
         <ul className={menu ? styles.active : styles.hidden}>
-            <Link href='/' onClick={toggleMenu}><li style={textColor}>Über mich</li></Link>
-            <Link href='/servicios' onClick={toggleMenu}><li style={textColor}>Dienste</li></Link>
-            <Link href='/contact' onClick={toggleMenu}><li style={textColor}> Kontakt</li></Link>
+            <Link href='/' onClick={toggleMenu}><li style={textColor}>{data.navbar.sobreMi}</li></Link>
+            <Link href='/servicios' onClick={toggleMenu}><li style={textColor}>{data.navbar.servicios}</li></Link>
+            <Link href='/contact' onClick={toggleMenu}><li style={textColor}>{data.navbar.contacto}</li></Link>
             {/* <Link href='/ejercicio' onClick={toggleMenu}><li style={textColor}> Ejercicio</li></Link> */}
         </ul>
             {

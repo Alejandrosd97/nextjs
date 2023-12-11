@@ -19,7 +19,7 @@ export default function Form({data}) {
 
   return ( 
     <div data-aos='fade-right' className={styles.contenedorForm}>
-        <h2 id='contacto' className='titulo'>KONTAKT</h2>
+        <h2 id='contacto' className='titulo'>{data.navbar.contacto}</h2>
         <p>{data.contacto.main}</p>
 
 

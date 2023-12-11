@@ -5,7 +5,7 @@ import Hero from '@/components/hero'
 import SobreMi from '@/components/sobreMi'
 import Navbar from '@/components/navbar'
 import { fotos } from '@/components/fotos'
-import data from '../assets/data.js'
+import data from '../assets/dataAleman.js'
 
 const inter = Inter({ subsets: ['latin'] })
 
