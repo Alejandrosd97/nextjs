@@ -13,6 +13,7 @@ export default function BlogDetail(props) {
     <>
 
   <NavbarProgramas/>
+  <h1>blog</h1>
 
     {/* post anterior
     { prevNextPost[0] && <div className={styles.postPrevio}
