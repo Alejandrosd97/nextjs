@@ -14,7 +14,7 @@ export default function BlogDetail(props) {
 
   <NavbarProgramas/>
 
-    {/* post anterior */}
+    {/* post anterior
     { prevNextPost[0] && <div className={styles.postPrevio}
       onMouseEnter={()=>setPreviousPostLink(true)}
       onMouseLeave={()=>setPreviousPostLink(false)}>
@@ -30,7 +30,7 @@ export default function BlogDetail(props) {
     </div>}
 
 
-    {/* post siguiente */}
+    
 
      {prevNextPost[1] && <div className='post-siguiente'
       onMouseEnter={()=>setNextPostLink(true)}
@@ -68,7 +68,7 @@ export default function BlogDetail(props) {
 
         </div>
         
-    </div>
+    </div> */}
     </>
   )
 
