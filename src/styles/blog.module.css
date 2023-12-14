@@ -1,18 +1,7 @@
-.headerImg {
-    width: 100%;
-    max-width: 1180px;
-    display: block;
-    margin: auto;
-    height: calc(100vh - 180px);
-    object-fit: cover;
-    object-position: 0% 20%
-}
+
 
 
 @media screen and (max-width:499px) {
-    .headerImg {
-        height: 30vh;
-    }
 
     .postImg {
         height: 250px !important;
@@ -28,11 +17,14 @@
 
 
 .postsh2 {
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    width:90%;
+    max-width: 1200px;
 }
 
-.container {
+.contenedor {
     width: 90%;
     max-width: 1200px;
     margin: auto;
@@ -53,11 +45,12 @@
 
 
 .post {
-    flex-basis: 390px;
+    flex-basis: 400px;
     flex-grow: 1;
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+
 
 }
 
@@ -67,6 +60,7 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     overflow: hidden;
+    cursor:pointer;
 }
 
 .postImg img {
@@ -75,7 +69,6 @@
     object-fit: cover;
     transform: scale(1);
     transition: 0.5s ease;
-
 }
 
 .postImg img:hover {
@@ -88,6 +81,7 @@
     text-align: justify;
     text-justify: inter-word;
     color: black;
+    background-color: rgba(232, 192, 97, 0.1);
 }
 
 .postText p {
@@ -100,16 +94,31 @@
 
 .postTitle {
     text-transform: capitalize;
-    color: rgba(0, 82, 158, 1);
+    color: rgba(38, 73, 92, 1);
+    display:inline-block;
+    position:relative;
+}
+
+.postTitle::after {
+    content: '';
+    height: 12px;
+    background-color: rgba(232, 192, 97, 0.5);
+    width: calc(100% - 5px);
+    position: absolute;
+    border-radius: 1px;
+    bottom: -2px;
+    z-index: -1;
+    left: 10px
 }
 
 .postCategory,
 .postDate {
-    color: rgba(0, 82, 158, 0.5);
+    color: rgba(38, 73, 92, 0.5);
 }
 
 .postText h3 {
-    margin: 0
+    margin: 0;
+    margin-bottom:20px
 }
 
 .paginationContainer ul {
