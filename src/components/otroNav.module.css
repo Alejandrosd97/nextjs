@@ -1,5 +1,5 @@
 .navbar {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -11,6 +11,7 @@
     align-items: center;
     z-index: 50;
     box-shadow: 0 10px 150px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
 
 .navbar ul {

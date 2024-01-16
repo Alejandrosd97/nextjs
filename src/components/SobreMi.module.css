@@ -21,16 +21,15 @@
 }
 
 .curriculum {
-    margin-top: 40px;
+    margin: 40px 0px 50px 0px;
     font-weight: bold;
     font-size: 20px
 }
 
 .curriculumButton {
-    background-color: transparent;
-    color: #e8c061;
+    background-color: #e8c061;
+    color: white;
     padding: 8px 20px;
-    border: 3px solid #e8c061;
     border-radius: 2px;
     letter-spacing:2px;
     display: block;
@@ -39,9 +38,8 @@
 }
 
 .curriculumButton:hover {
-    background-color: #e8c061;
-    color: #efefef;
-    border: 3px solid #e8c061;
+    transform :translate(-1px, -3px);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
     transition: 0.5s
 }
 
@@ -72,7 +70,6 @@
     bottom:-2px;
     z-index:-1;
     left:10px
-
 }
 
 

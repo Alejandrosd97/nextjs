@@ -11,6 +11,11 @@
     position: relative;
 }
 
+.foto{
+    width:40%;
+}
+
+
 .caja p, .texto{
     margin: 0;
 }
@@ -23,15 +28,37 @@
 .verPrograma{
     margin-top: 20px;
     padding: 8px 16px;
-    border: 2px solid #26495c;
-    color:#26495c;
+    color:white;
     border-radius: 2px;
-    background-color:#fff;
+    background-color:#26495c;
+    transition:0.5s;
 }
 
 .verPrograma:hover{
-    color:#fff;
-    background-color:#26495c;
+    transform: translate(-1px, -3px);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.5s 
+}
+
+.texto{
+    width:60%
+}
+
+.texto h3{
+    position:relative;
+    display:inline-block;
+}
+
+.texto h3::after {
+    content: '';
+    height: 10px;
+    background-color: rgba(232, 192, 97, 0.5);
+    width: 100%;
+    position: absolute;
+    border-radius: 1px;
+    bottom: 0px;
+    z-index: -1;
+    left: 8px
 }
 
 
@@ -42,6 +69,10 @@
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
+    }
+
+    .cajaFoto {
+        width: 40%
     }
 
 }
@@ -57,10 +88,5 @@
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
         overflow: hidden;
-    }
-
-    .caja img {
-        width: 100%;
-        border-radius: 3px
     }
 }

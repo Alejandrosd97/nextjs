@@ -5,11 +5,14 @@ import {AiOutlineMenu , AiOutlineClose} from 'react-icons/ai'
 import data from '../assets/dataAleman.js'
 
 
+
 export default function Navbar() {
     const [color, setColor]= useState('white')
     const [bgColor, setBgColor]= useState('transparent')
     const [shadow, setShadow]= useState(false)
     const [menu, setMenu] = useState(false)
+
+   
 
 
     function toggleMenu(){

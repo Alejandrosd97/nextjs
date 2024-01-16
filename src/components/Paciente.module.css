@@ -1,0 +1,20 @@
+.paciente{
+    border-radius: 2px;
+    padding:10px 16px;
+    margin-top: 20px;
+    width:100%;
+    transition: 0.5s;
+    background-color:white;
+}
+
+
+.paciente:hover{
+    background-color: rgba(38, 73, 92, 0.2);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    transform: translate(-3px, -3px);
+    transition: 0.5s;
+}
+
+.paciente p{
+    margin:0px
+}

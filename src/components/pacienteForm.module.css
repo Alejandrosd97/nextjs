@@ -1,0 +1,92 @@
+.postContenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 10px;
+    height:350px;
+    padding: 0px 4px;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+    position: relative;
+    
+}
+
+.activo{
+    height:350px;
+    padding:0px 4px;
+    overflow:hidden;
+    transition: 0.5s;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #26495c
+}
+
+.createPostBtns {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.createPostBtns button {
+    width: 50%;
+}
+
+.label {
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.row{
+    display:flex;
+    gap:10px;
+    justify-content: space-between;
+}
+
+.rowInput{
+    width: 25%
+}
+
+.textArea{
+    width:50%
+}
+
+.textArea textarea{
+    height:100px
+}
+
+.input {
+    width: 90%;
+    max-width: 594px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+}
+
+.input input {
+    width: 70%
+}
+
+.button {
+    border-radius: 2px;
+    color: white;
+    width:132px;
+    background-color: #26495c;
+    padding: 8px 16px;
+    transition: 0.3s
+}
+
+.resetButton{
+    background-color: #d85565;
+    border-radius: 2px;
+    color : white;
+    transition:0.3s
+}
+
+.button:hover, .resetButton:hover{
+    transform:translateY(-2px);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}

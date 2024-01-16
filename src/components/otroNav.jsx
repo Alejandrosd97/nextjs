@@ -1,6 +1,6 @@
 import {React, useEffect, useState} from 'react'
-import styles from './NavbarProgramas.module.css'
-import Link from 'next/link'
+import styles from './otroNav.module.css'
+import Link from 'next/link' 
 import {AiOutlineMenu , AiOutlineClose} from 'react-icons/ai'
 
 export default function NavbarProgramas() {

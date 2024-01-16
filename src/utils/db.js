@@ -7,10 +7,12 @@ const conn = {
 }
 
 export async function dbConnect (){
-    if (conn.isConnected) {
-        return
-    }
-    const db = await connect(process.env.MONGODB_KEY)
+    // if (conn.isConnected) {
+    //     return
+    // }
+    // const db = await connect(process.env.MONGODB_KEY)
+
+    console.log('recuerda cambiar db conection a mongodb')
 }
 
 connection.on('connected', ()=>{

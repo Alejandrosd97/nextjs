@@ -8,8 +8,9 @@ export default function programacaja(props) {
   return (
       
         <div className={styles.caja}>
-            
-            <img src={props.url} alt="" />
+            <div className={styles.foto}>
+              <img src={props.url} alt="" />
+            </div>
             <div className={styles.texto}>
     
               <h3>{props.titulo}</h3>

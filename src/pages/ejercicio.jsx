@@ -1,8 +1,7 @@
 import React from 'react'
-import Navbar from '@/components/navbarProgramas'
+import Navbar from '@/components/otroNav'
 import Programacaja from '@/components/programacaja'
 import styles from '@/styles/listaProgramas.module.css'
-import {getSession } from 'next-auth/react'
 
 
 
@@ -34,16 +33,6 @@ export default function listaprogramas({info}) {
 export const getServerSideProps = async (ctx) =>{
   const res = await fetch('https://miportfolio-virid.vercel.app/api/lista')
   const info = await res.json()
-
-  const session = await getSession(ctx)
-
-  if (!session){
-    return {redirect : 
-      {
-        destination : '/login'
-      }
-    }
-  }
 
 
   return {

@@ -1,76 +1,87 @@
-import {React, useState, useEffect, useContext } from 'react'
+import {React} from 'react'
 
-import NavbarProgramas from '@/components/navbarProgramas'
+import NavbarProgramas from '@/components/otroNav'
+import LinkAnterior from '@/components/linkAnterior'
+import LinkPosterior from '@/components/linkPosterior'
+
+import reactStringReplace from 'react-string-replace'
+import styles from '@/styles/postDetail.module.css'
 
 
 
 
-export default function BlogDetail(props) {
+export default function BlogDetail({post, todos}) {
+
+
+
+    //console.log(post)
+    //console.log(todos)
+//   const [previousPostLink, setPreviousPostLink]= useState(false)
+//   const [nextPostLink, setNextPostLink]= useState(false)
+//   const [prevNextPost, setPrevNextPost] = useState([])
 
   
-    
+
+        
+       let prevNextPost
+
+        const postActual = todos.map(p => p.id).indexOf(post.id)
+        const prev = postActual -1
+        const next = postActual +1
+        //console.log(postActual)
+        //console.log(todos.length)
+
+        if (postActual > 0 && postActual < todos.length -1){
+          prevNextPost = [todos[prev], todos[next]]
+          console.log('aqui')
+        }
+        else if (postActual >= todos.length -1){
+          prevNextPost = [todos[prev], null]
+        }
+        else{
+          prevNextPost = [null, todos[next]]
+        }
+
+        //console.log(prevNextPost)
+
   return (
     <>
 
   <NavbarProgramas/>
-  <h1>blog</h1>
-
-    {/* post anterior
-    { prevNextPost[0] && <div className={styles.postPrevio}
-      onMouseEnter={()=>setPreviousPostLink(true)}
-      onMouseLeave={()=>setPreviousPostLink(false)}>
-      <span className='link-previo'>POST PREVIO</span> 
-      <div className={previousPostLink ? "foto-previo" : "foto-previo hidden" }>
-        <img src='https://pagina-raul.vercel.app/api/post' alt="foto" />
-        <div className='tarjeta-previo'>
-          <h3 className='titulo-previo'>{prevNextPost[0]? prevNextPost[0].title : ''}</h3>
-          <small className='small-lateral'>{ prevNextPost[0] ? prevNextPost[0].date.split('T')[0] : ''}</small>
-          <a href={`https://raulfisio-frontend-definitivo.vercel.app/blog/post/${prevNextPost[0].id}`}><button>Leer publicación</button></a>
-        </div>
-      </div>
-    </div>}
+  <LinkAnterior prevNextPost={prevNextPost}/>
+<LinkPosterior prevNextPost={prevNextPost}/>
 
 
-    
-
-     {prevNextPost[1] && <div className='post-siguiente'
-      onMouseEnter={()=>setNextPostLink(true)}
-      onMouseLeave={()=>setNextPostLink(false)}>
-      <div className={nextPostLink ? "foto-siguiente" : "foto-siguiente hidden" }>
-        <img src='https://picsum.photos/400/300' alt="foto" />
-        <div className='tarjeta-siguiente'>
-          <h3 className='titulo-siguiente'>{prevNextPost[1].title}</h3>
-          <small className='small-lateral'>{prevNextPost[1].date.split('T')[0]}</small>
-          <a href='#'><button>Leer publicación</button></a>
-        </div>
-      </div>
-      <span className='link-siguiente'>POST SIGUIENTE</span> 
-    </div>}
-
-
-
-
-    <div className='contenedor-detalle mt-3'>
-        { post.category && <span className='span-category'>{post.category}</span>}
-        { post.title && <h1 className='titulo-detalle mt-0'>{post.title}</h1>}
-        <img className='foto-principal mb-5' src={post.image ? post.image : fotoIndia2} alt="" />
-
-        <div className="links-mobile">
-        {prevNextPost[0] && <a href={`https://raulfisio-frontend-definitivo.vercel.app/blog/post/${prevNextPost[0].id}`}><button>{prevNextPost[0].title}</button></a>}  
-        {prevNextPost[1] && <a href={`https://raulfisio-frontend-definitivo.vercel.app/blog/post/${prevNextPost[1].id}`}><button>{prevNextPost[1].title}</button></a>}  
-        </div>
+    <div className={styles.contenedorDetalle}>
+        <h1 className={styles.tituloDetalle}>{post.title}</h1>
+        <img className={styles.fotoPrincipal} src='https://picsum.photos/seed/picsum/200/300' alt="" />
 
         
-        <p className='post-contenido'>{reactStringReplace(post.content, '\n', (match, i) => (
+        <p className={styles.postContenido}>{reactStringReplace(post.content, '\n', (match, i) => (
             <br/>))}
             </p>
         
-        <div className='comentarios'>
-
-        </div>
-        
-    </div> */}
+    </div>
     </>
   )
+}
 
+
+
+
+export const getServerSideProps = async (ctx) =>{
+  const res = await fetch(`http://localhost:3000/api/post/${ctx.query.id}`)
+  const post = await res.json()
+
+
+  const respuesta = await fetch(`http://localhost:3000/api/post`)
+  const todos = await respuesta.json()
+    console.log(todos)
+
+  return {
+    props :{
+      post,
+      todos
+    }
   }
+}
